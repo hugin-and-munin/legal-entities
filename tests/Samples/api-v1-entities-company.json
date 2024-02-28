@@ -1,0 +1,774 @@
+{
+  "Type": "Company",
+  "Link": "ogrn/1177746494166",
+  "Ogrn": "1177746494166",
+  "Inn": "7704414297",
+  "Kpp": "770401001",
+  "Pfr": "087104073035",
+  "Fss": "771109028177111",
+  "Opf": "12300",
+  "Okpo": "15724100",
+  "Oktmo": "45383000000",
+  "Okfs": "23",
+  "Okopf": "12300",
+  "Okogu": "4210011",
+  "Okato": "45286590000",
+  "RegistrationDate": "2017-05-19T00:00:00",
+  "Status": {
+    "Status": "Active",
+    "StatusText": null,
+    "Reason": null,
+    "ReasonText": null,
+    "IsActual": true,
+    "Date": null
+  },
+  "Names": {
+    "TotalItems": 1,
+    "Items": [
+      {
+        "ShortName": "ООО \"ЯНДЕКС.ТЕХНОЛОГИИ\"",
+        "FullName": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЯНДЕКС.ТЕХНОЛОГИИ\"",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      }
+    ]
+  },
+  "ActivityTypes": {
+    "TotalItems": 7,
+    "Items": [
+      {
+        "Code": "62.01",
+        "Name": "РАЗРАБОТКА КОМПЬЮТЕРНОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ",
+        "IsMain": true,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Code": "63.11.1",
+        "Name": "ДЕЯТЕЛЬНОСТЬ ПО СОЗДАНИЮ И ИСПОЛЬЗОВАНИЮ БАЗ ДАННЫХ И ИНФОРМАЦИОННЫХ РЕСУРСОВ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Code": "62.02",
+        "Name": "ДЕЯТЕЛЬНОСТЬ КОНСУЛЬТАТИВНАЯ И РАБОТЫ В ОБЛАСТИ КОМПЬЮТЕРНЫХ ТЕХНОЛОГИЙ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Code": "73.20",
+        "Name": "ИССЛЕДОВАНИЕ КОНЪЮНКТУРЫ РЫНКА И ИЗУЧЕНИЕ ОБЩЕСТВЕННОГО МНЕНИЯ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Code": "70.22",
+        "Name": "КОНСУЛЬТИРОВАНИЕ ПО ВОПРОСАМ КОММЕРЧЕСКОЙ ДЕЯТЕЛЬНОСТИ И УПРАВЛЕНИЯ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Code": "62.03",
+        "Name": "ДЕЯТЕЛЬНОСТЬ ПО УПРАВЛЕНИЮ КОМПЬЮТЕРНЫМ ОБОРУДОВАНИЕМ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Code": "63.99",
+        "Name": "Деятельность информационных служб прочая, не включенная в другие группировки",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      }
+    ]
+  },
+  "AuthorizedCapitals": {
+    "TotalItems": 1,
+    "Items": [
+      {
+        "Sum": 60000000,
+        "Type": "УСТАВНЫЙКАПИТАЛ",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      }
+    ]
+  },
+  "EmployeesInfo": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Addresses": {
+    "TotalItems": 3,
+    "Items": [
+      {
+        "Id": "4e343c95-9287-4ecb-ae79-55f3976b86e8",
+        "RegionType": null,
+        "RegionName": "Г.Москва",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛ.",
+        "StreetName": "ЛЬВА ТОЛСТОГО",
+        "Postcode": "119021",
+        "RegionCode": "77",
+        "KladrCode": "770000000007095",
+        "GarCode": null,
+        "House": "Д. 16",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "119021,  Г.Москва, УЛ. ЛЬВА ТОЛСТОГО, Д. 16",
+        "OnAddressCount": 23,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Id": "43a9b74e-9034-4e95-8939-deee376546d9",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛИЦА",
+        "StreetName": "ЛЬВА ТОЛСТОГО",
+        "Postcode": "119021",
+        "RegionCode": "77",
+        "KladrCode": "770000000007095",
+        "GarCode": null,
+        "House": "ДОМ 16",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "119021, ГОРОД МОСКВА, УЛИЦА ЛЬВА ТОЛСТОГО, ДОМ 16",
+        "OnAddressCount": 23,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2017-05-19T00:00:00"
+      },
+      {
+        "Id": "8aec3889-13a1-4b93-9181-05029bf96cbb",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛ.",
+        "StreetName": "ЛЬВА ТОЛСТОГО",
+        "Postcode": "119021",
+        "RegionCode": "77",
+        "KladrCode": "770000000007095",
+        "GarCode": null,
+        "House": "Д. 16",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "119021, ГОРОД МОСКВА, УЛ. ЛЬВА ТОЛСТОГО, Д. 16",
+        "OnAddressCount": 23,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2017-05-19T00:00:00"
+      }
+    ]
+  },
+  "Rsmp": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Taxation": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Managers": {
+    "TotalItems": 3,
+    "Items": [
+      {
+        "Id": "e8ca8680-08c2-4177-9256-80e52bcf57ba",
+        "Date": "2023-03-03T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "11f8cfea-b51b-4caf-8609-dc833eed92c7",
+          "Type": "Person",
+          "Name": "МАСЮК ДМИТРИЙ ВИКТОРОВИЧ",
+          "Inn": "770373093393",
+          "Ogrn": null,
+          "Link": "inn/770373093393",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ГЕНЕРАЛЬНЫЙ ДИРЕКТОР",
+            "Date": "2023-03-03T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "3f48d24d-29b3-4bfa-871b-35ae16c60d9c",
+        "Date": "2022-04-28T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "47213333-9209-4513-82aa-c9d35c818695",
+          "Type": "Person",
+          "Name": "ПОПОВ ПЕТР СЕРГЕЕВИЧ",
+          "Inn": "771708207600",
+          "Ogrn": null,
+          "Link": "inn/771708207600",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ГЕНЕРАЛЬНЫЙ ДИРЕКТОР",
+            "Date": "2022-04-28T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "2a34b5c7-3570-4467-83ab-d46f527f21ea",
+        "Date": "2017-05-19T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "f9ad5774-512f-40a9-8097-9bd9dd353033",
+          "Type": "Person",
+          "Name": "СТЫСКИН АНДРЕЙ ИГОРЕВИЧ",
+          "Inn": "772489733092",
+          "Ogrn": null,
+          "Link": "inn/772489733092",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ГЕНЕРАЛЬНЫЙ ДИРЕКТОР",
+            "Date": "2017-05-19T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      }
+    ]
+  },
+  "AsManagers": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Shareholders": {
+    "TotalItems": 2,
+    "Items": [
+      {
+        "Id": "e46975a2-a82a-4bc4-ba13-709dcfb9751f",
+        "Date": "2017-05-19T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "445e67fe-8a8e-435d-90b0-0cbe8259cedf",
+          "Type": "ForeignCompany",
+          "Name": "ПУБЛИЧНАЯ КОМПАНИЯ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЯНДЕКС Н.В.\"",
+          "Inn": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/445E67FE-8A8E-435D-90B0-0CBE8259CEDF",
+          "Address": "НИДЕРЛАНДЫ, БУЛЬВАР СХИПХОЛ 165, 1118БГ СХИПХОЛ, НИДЕРЛАНДЫ",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2017-05-19T00:00:00",
+            "FaceValue": 60000000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "b5d0e5a1-a0d1-4b95-8958-7ba1b3edb27f",
+        "Date": "2017-05-19T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "be24cf9c-060b-4886-9143-1a16d3ea31b9",
+          "Type": "ForeignCompany",
+          "Name": "ПУБЛИЧНАЯ КОМПАНИЯ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЯНДЕКС Н.В.\"",
+          "Inn": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/BE24CF9C-060B-4886-9143-1A16D3EA31B9",
+          "Address": "НИДЕРЛАНДЫ, БУЛЬВАР СХИПХОЛ 165, 1118БГ СХИПХОЛ, НИДЕРЛАНДЫ",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2017-05-19T00:00:00",
+            "FaceValue": 60000000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      }
+    ]
+  },
+  "AsShareholders": {
+    "TotalItems": 12,
+    "Items": [
+      {
+        "Id": "a560cad4-8728-4e4c-8bb2-e5f3a622ea56",
+        "Date": "2024-01-26T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "c8c8e455-9d1c-4a41-8f99-9c607cdaa542",
+          "Type": "Company",
+          "Name": "ООО \"ЕСОП СПВ\"",
+          "Inn": "9705217231",
+          "Ogrn": "1247700072333",
+          "Link": "ogrn/1247700072333",
+          "Address": "115035,  Г.МОСКВА, УЛ САДОВНИЧЕСКАЯ, Д. 82, СТР. 2",
+          "ActivityType": "73.20.1 ИССЛЕДОВАНИЕ КОНЪЮНКТУРЫ РЫНКА",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2024-01-26T00:00:00",
+            "FaceValue": 9900,
+            "Size": 99
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "db83293b-b629-4066-a965-112d35b93ef5",
+        "Date": "2023-11-03T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "27a99f49-f153-4e05-ac83-18054c32009f",
+          "Type": "Company",
+          "Name": "ООО \"ДРАЙВ СЕРВИС\"",
+          "Inn": "9703037667",
+          "Ogrn": "1217700282744",
+          "Link": "ogrn/1217700282744",
+          "Address": "123112,  Г.Москва, ПРОЕЗД 1-Й КРАСНОГВАРДЕЙСКИЙ, Д. 21, СТР. 1, ЭТАЖ 34 ПОМЕЩ. 34.29",
+          "ActivityType": "45.20 ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ АВТОТРАНСПОРТНЫХ СРЕДСТВ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-11-03T00:00:00",
+            "FaceValue": 100,
+            "Size": 0.1
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "6be35708-b920-4a9d-ba78-de1ded67c990",
+        "Date": "2023-11-03T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "33f7b1fb-6a08-4b8b-8ca6-e2fe74f6658d",
+          "Type": "Company",
+          "Name": "ООО \"ЯНДЕКС.ТАКСИ\"",
+          "Inn": "7704340310",
+          "Ogrn": "5157746192731",
+          "Link": "ogrn/5157746192731",
+          "Address": "123112,  Г.Москва, ПР-Д 1-Й КРАСНОГВАРДЕЙСКИЙ, Д. 21, СТР. 1, ПОМЕЩ. 36.9 ЭТАЖ 36",
+          "ActivityType": "62.01 РАЗРАБОТКА КОМПЬЮТЕРНОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-11-03T00:00:00",
+            "FaceValue": 100000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "845ae02f-4df5-4bb0-b8f5-b38d4cc8ff42",
+        "Date": "2023-10-27T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "df409a83-a78c-4ee5-87b2-1a88e7da86e7",
+          "Type": "Company",
+          "Name": "ООО \"ЯНДЕКС.ТАКСИ ТЕХНОЛОГИИ\"",
+          "Inn": "7704389192",
+          "Ogrn": "1177746073328",
+          "Link": "ogrn/1177746073328",
+          "Address": "123112,  Г.Москва, ПР-Д 1-Й КРАСНОГВАРДЕЙСКИЙ, Д. 21, СТР. 1, ПОМЕЩ. 35.34 ЭТАЖ 35",
+          "ActivityType": "62.01 РАЗРАБОТКА КОМПЬЮТЕРНОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-10-27T00:00:00",
+            "FaceValue": 10,
+            "Size": 0.1
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "9253bfb1-2006-44df-bcf6-3aa530189bc0",
+        "Date": "2023-10-27T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "45f0e385-11c5-4f36-878e-1b5a3cc4e6ff",
+          "Type": "Company",
+          "Name": "ООО \"КРОНОС\"",
+          "Inn": "2310194173",
+          "Ogrn": "1162375033919",
+          "Link": "ogrn/1162375033919",
+          "Address": "350015,  Краснодарский край, Г. КРАСНОДАР, УЛ. ИМ. ЯНКОВСКОГО, Д. 169, ОФИС 507",
+          "ActivityType": "77.40 Аренда интеллектуальной собственности и подобной продукции, кроме авторских прав",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-10-27T00:00:00",
+            "FaceValue": 11000,
+            "Size": 99.09
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "2d6abe9f-f5a0-4c26-97d0-3fc1b67c4a49",
+        "Date": "2023-10-27T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "07fec554-8723-423b-be07-91450e468a88",
+          "Type": "Company",
+          "Name": "ООО \"ДРАЙВ ФОРС\"",
+          "Inn": "9703028782",
+          "Ogrn": "1217700103455",
+          "Link": "ogrn/1217700103455",
+          "Address": "123112,  Г.Москва, ПРОЕЗД 1-Й КРАСНОГВАРДЕЙСКИЙ, Д. 21, СТР. 1, ЭТАЖ 34 ПОМЕЩ. 34.30",
+          "ActivityType": "68.20 АРЕНДА И УПРАВЛЕНИЕ СОБСТВЕННЫМ ИЛИ АРЕНДОВАННЫМ НЕДВИЖИМЫМ ИМУЩЕСТВОМ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-10-27T00:00:00",
+            "FaceValue": 100,
+            "Size": 0.1
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "71038e2d-8c1a-4380-ba15-7f1c862be1cf",
+        "Date": "2023-10-27T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "2b0dde64-2248-45c6-a0db-a67f18e07ae9",
+          "Type": "Company",
+          "Name": "ООО \"ЯНДЕКС.ДРАЙВ\"",
+          "Inn": "7704448440",
+          "Ogrn": "5177746277385",
+          "Link": "ogrn/5177746277385",
+          "Address": "123112,  Г.Москва, ПРОЕЗД 1-Й КРАСНОГВАРДЕЙСКИЙ, Д. 21, СТР. 1, ЭТАЖ 34 ПОМЕЩ. 34.39",
+          "ActivityType": "77.11 АРЕНДА И ЛИЗИНГ ЛЕГКОВЫХ АВТОМОБИЛЕЙ И ЛЕГКИХ АВТОТРАНСПОРТНЫХ СРЕДСТВ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-10-27T00:00:00",
+            "FaceValue": 100,
+            "Size": 0.1
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "0ee05e57-98b7-41eb-b62e-6bcbc7df23ce",
+        "Date": "2023-10-27T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "ac34ed0d-791b-4a1f-8705-f91894ebe9e9",
+          "Type": "Company",
+          "Name": "ООО \"ТЕЛЕОН",
+          "Inn": "2308191263",
+          "Ogrn": "1122308008019",
+          "Link": "ogrn/1122308008019",
+          "Address": "123112,  Г.Москва, ПРОЕЗД 1-Й КРАСНОГВАРДЕЙСКИЙ, Д. 21, СТР. 1",
+          "ActivityType": "82.20 ДЕЯТЕЛЬНОСТЬ ЦЕНТРОВ ОБРАБОТКИ ТЕЛЕФОННЫХ ВЫЗОВОВ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-10-27T00:00:00",
+            "FaceValue": 60400,
+            "Size": 99.18
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "dcd222a3-bc0e-46ad-811d-ddee5a56d250",
+        "Date": "2023-10-27T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "ce159d04-29be-4dcf-aba4-fbc9ac14e39e",
+          "Type": "Company",
+          "Name": "ООО \"ЯНДЕКС.КАРШЕРИНГ\"",
+          "Inn": "9705143572",
+          "Ogrn": "1207700149832",
+          "Link": "ogrn/1207700149832",
+          "Address": "123112,  Г.Москва, ПРОЕЗД 1-Й КРАСНОГВАРДЕЙСКИЙ, Д. 21, СТР. 1, ЭТАЖ 34 ПОМЕЩ. 34.39",
+          "ActivityType": "62.01 РАЗРАБОТКА КОМПЬЮТЕРНОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2023-10-27T00:00:00",
+            "FaceValue": 100000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "9630ff9d-d9a3-4fff-9787-c8ace7abca73",
+        "Date": "2022-09-08T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "3090bb84-3720-4d17-96f7-faf75b2d37ce",
+          "Type": "Company",
+          "Name": "ООО \"ЯНДЕКС.МАРКЕТ ЛАБ\"",
+          "Inn": "7704348340",
+          "Ogrn": "1167746241222",
+          "Link": "ogrn/1167746241222",
+          "Address": "115035,  Г.Москва, УЛ САДОВНИЧЕСКАЯ, Д. 82, СТР. 2, ПОМЕЩ. 2А26",
+          "ActivityType": "62.01 РАЗРАБОТКА КОМПЬЮТЕРНОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2022-09-08T00:00:00",
+            "FaceValue": 10,
+            "Size": 0.1
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      }
+    ]
+  },
+  "Branches": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Representatives": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Predecessors": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Successors": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "PensionFundRegistrations": {
+    "TotalItems": 2,
+    "Items": [
+      {
+        "RegistrationNumber": "087104073035",
+        "RegistrationDate": "2017-05-26T00:00:00",
+        "FundOrganCode": "087104",
+        "FundOrganName": "Отделение Фонда пенсионного и социального страхования Российской Федерации по г. Москве и Московской области",
+        "IsActual": true,
+        "Date": "2017-05-29T00:00:00"
+      },
+      {
+        "RegistrationNumber": "087104073035",
+        "RegistrationDate": "2017-05-26T00:00:00",
+        "FundOrganCode": "087104",
+        "FundOrganName": "Государственное учреждение - Главное Управление Пенсионного фонда РФ №10 Управление №3 по г. Москве и Московской области муниципальный район Хамовники г.Москвы",
+        "IsActual": false,
+        "Date": "2017-05-29T00:00:00"
+      }
+    ]
+  },
+  "SocialInsuranceFundRegistrations": {
+    "TotalItems": 2,
+    "Items": [
+      {
+        "RegistrationNumber": "771109028177111",
+        "RegistrationDate": "2017-05-23T00:00:00",
+        "FundOrganCode": "7711",
+        "FundOrganName": "Отделение Фонда пенсионного и социального страхования Российской Федерации по г. Москве и Московской области",
+        "IsActual": true,
+        "Date": "2017-05-23T00:00:00"
+      },
+      {
+        "RegistrationNumber": "771109028177111",
+        "RegistrationDate": "2017-05-23T00:00:00",
+        "FundOrganCode": "7711",
+        "FundOrganName": "Филиал №11 Государственного учреждения - Московского регионального отделения Фонда социального страхования Российской Федерации",
+        "IsActual": false,
+        "Date": "2017-05-23T00:00:00"
+      }
+    ]
+  },
+  "TaxRegistrations": {
+    "TotalItems": 1,
+    "Items": [
+      {
+        "Kpp": "770401001",
+        "Inn": "7704414297",
+        "RegistrationDate": "2017-05-19T00:00:00",
+        "TaxOrganCode": "7704",
+        "TaxOrganName": "Инспекция Федеральной налоговой службы № 4 по г.Москве",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      }
+    ]
+  },
+  "RegistrationAuthorities": {
+    "TotalItems": 1,
+    "Items": [
+      {
+        "Code": "7746",
+        "Name": "Межрайонная инспекция Федеральной налоговой службы № 46 по г. Москве",
+        "Address": "125373, г.Москва, Походный проезд, домовладение 3, стр.2",
+        "IsActual": true,
+        "Date": "2017-05-19T00:00:00"
+      }
+    ]
+  },
+  "FomsRegistrations": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Registrars": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Reorganizations": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Id": "44ec600e-2ae1-4823-b4b6-d53da6b63a6a",
+  "InfoCounters": {
+    "Status": -1,
+    "AuthorisedCapital": 1,
+    "Name": 1,
+    "ActivityTypeInfo": 7,
+    "Address": 3,
+    "ManagementCompany": -1,
+    "AsManagementCompany": -1,
+    "Shareholder": 2,
+    "AsShareholder": 12,
+    "Manager": 3,
+    "AsManager": -1,
+    "Branch": -1,
+    "License": -1,
+    "Predecessor": -1,
+    "Successor": -1,
+    "RepresentativeOffice": -1,
+    "Registrar": -1,
+    "AsRegistrar": -1,
+    "ReorganizationInfo": -1,
+    "LlcShare": -1,
+    "AsEntrepreneur": -1,
+    "Bailiffs": 3,
+    "Arbitr": -1,
+    "FedresursMessages": 4,
+    "Trademark": -1,
+    "IssuersMessages": -1,
+    "BankruptMessages": -1,
+    "Contracts": -1,
+    "EgrulListsDebtors": -1,
+    "EgrulListsDisqPersons": -1,
+    "EgrulListsEntitiesWithDisqPersons": -1,
+    "EgrulListsUnreported": -1,
+    "EgrulListsMassFounder": -1,
+    "EgrulListsMassManager": -1,
+    "Finance": 6,
+    "Inspections": -1,
+    "Contacts": 2,
+    "FedresursPledge": -1,
+    "Subsidies": -1,
+    "MassMedia": 2,
+    "Vacancies": 41,
+    "Accreditation": -1,
+    "BanksInfo": -1,
+    "Auditors": 2,
+    "Insurance": -1,
+    "ExporterProducts": -1,
+    "WoodDeals": -1,
+    "WoodRents": -1,
+    "CustomsWarehouses": -1,
+    "FnsDocuments": -1,
+    "Receipts": -1,
+    "Patents": -1,
+    "Vehicles": -1,
+    "WaterObjects": -1,
+    "FipsApplications": -1,
+    "FipsPatents": -1,
+    "GeneralJurisdictionCourts": -1
+  }
+}

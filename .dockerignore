@@ -1,0 +1,14 @@
+bin/
+obj/
+.vscode/
+.vs/
+*.user
+*.suo
+*.pidb
+*.userprefs
+.idea/
+*.sln.iml
+*.dll
+*.exe
+*.log
+.gitignore

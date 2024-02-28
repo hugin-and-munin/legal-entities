@@ -1,0 +1,80 @@
+syntax = "proto3";
+
+package LegalEntityChecker;
+
+// 
+service LegalEntityChecker {
+  // 
+  rpc Get (LegalEntityInfoRequest) returns (LegalEntityInfoReponse);
+}
+
+// Информация о юридическом лице
+message LegalEntityInfoReponse {
+  // Короткое имя
+  string name = 1;
+  // ИНН
+  int64 tin = 2;
+  // Дата регистрации юридического лица
+  int64 incorporationDate = 3;
+  // Уставной капитал (без десятых долей)
+  int32 authorizedCapital = 4;
+  // Численность сотрудников
+  int32 employeesNumber = 5;
+  // Юридический адрес
+  string address = 6;
+  // Статус
+  LegalEntityStatus legalEntityStatus = 7;
+}
+
+// Статус юридического лица
+enum LegalEntityStatus
+{
+  // Действующее
+  Active = 0;
+  // Процедура банкротства
+  Bankruptcy = 1;
+  // В процессе реорганизации
+  InReorganizationProcess = 2;
+  // В процессе ликвидации
+  InTerminationProcess = 3;
+  // Ликвидировано
+  Terminated = 4;
+}
+
+// Запрос информации
+message LegalEntityInfoRequest {
+  int64 Tin = 1;
+}
+
+// Запрос информации
+message LegalEntityExtendedInfoRequest {
+  int64 Tin = 1;
+}
+
+message LegalEntityExtendedInfoResponse {
+  // Короткое имя
+  string name = 1;
+  // ИНН
+  int64 tin = 2;
+  // Дата регистрации юридического лица
+  int64 incorporationDate = 3;
+  // Уставной капитал (без десятых долей)
+  int32 authorizedCapital = 4;
+  // Численность сотрудников
+  int32 employeesNumber = 5;
+  // Юридический адрес
+  string address = 6;
+  // Статус
+  LegalEntityStatus legalEntityStatus = 7;
+  // Финансовая информация
+  repeated FinanceInfo financeInfo = 8;
+}
+
+message FinanceInfo {
+  int32 year = 1;
+  int64 revenue = 2;
+  int64 profit = 3;
+  int64 debit = 4;
+  int64 credit = 5;
+  int64 balance = 6;
+}

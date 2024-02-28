@@ -1,0 +1,100 @@
+{
+  "Aggregations": {
+    "Status": [
+      {
+        "Value": "Paid",
+        "Sum": 60000,
+        "Name": "Оплаченные",
+        "Count": 3
+      }
+    ],
+    "ExecutionObject": [
+      {
+        "Value": "Госпошлина, присужденная судом",
+        "Sum": 60000,
+        "Name": "Госпошлина, присужденная судом",
+        "Count": 2
+      },
+      {
+        "Value": "Исполнительский сбор",
+        "Sum": 0,
+        "Name": "Исполнительский сбор",
+        "Count": 1
+      }
+    ],
+    "Year": [
+      {
+        "Value": 2022,
+        "Sum": 60000,
+        "Name": "2022",
+        "Count": 2
+      },
+      {
+        "Value": 2020,
+        "Sum": 0,
+        "Name": "2020",
+        "Count": 1
+      }
+    ]
+  },
+  "TotalItems": 3,
+  "Items": [
+    {
+      "Id": "2fd9eb98-b46c-b062-9c5a-802e1f06f0d0",
+      "Number": "271641/22/77053-ИП",
+      "InitiationDate": "2022-12-12T00:00:00",
+      "ConsolidatedProceedingNumber": null,
+      "DocumentType": "Постановление судебного пристава-исполнителя",
+      "DocumentDate": "2022-12-05T00:00:00",
+      "DocumentNumber": "77053/22/610558",
+      "DocumentRequirements": null,
+      "ExecutionObject": "Исполнительский сбор",
+      "DebtTotal": 0,
+      "DebtRemain": 0,
+      "DepartmentName": "ОСП по Центральному АО №1",
+      "DepartmentAddress": "129090, Россия, г. Москва, , , , пер. Коптельский 1-й, 14/16, 2, ",
+      "Status": "Paid",
+      "CompletionDate": "2023-02-17T00:00:00",
+      "CompletionReason": null,
+      "CompletionReasonText": null
+    },
+    {
+      "Id": "f527abfa-9f58-ad8f-5427-fd43d22c2727",
+      "Number": "209058/22/77053-ИП",
+      "InitiationDate": "2022-10-05T00:00:00",
+      "ConsolidatedProceedingNumber": null,
+      "DocumentType": "Исполнительный лист",
+      "DocumentDate": "2022-07-11T00:00:00",
+      "DocumentNumber": "78RS0005#2-185/2022#2",
+      "DocumentRequirements": null,
+      "ExecutionObject": "Госпошлина, присужденная судом",
+      "DebtTotal": 60000,
+      "DebtRemain": 60000,
+      "DepartmentName": "ОСП по Центральному АО №1",
+      "DepartmentAddress": "129090, Россия, г. Москва, , , , пер. Коптельский 1-й, 14/16, 2, ",
+      "Status": "Paid",
+      "CompletionDate": "2023-01-19T00:00:00",
+      "CompletionReason": null,
+      "CompletionReasonText": null
+    },
+    {
+      "Id": "c8a6668a-0591-6b2c-5f49-a73892ed3c4d",
+      "Number": "89812/20/77053-ИП",
+      "InitiationDate": "2020-07-08T00:00:00",
+      "ConsolidatedProceedingNumber": null,
+      "DocumentType": "Исполнительный лист",
+      "DocumentDate": "2020-06-15T00:00:00",
+      "DocumentNumber": "ФС № 033820108",
+      "DocumentRequirements": null,
+      "ExecutionObject": "Госпошлина, присужденная судом",
+      "DebtTotal": 0,
+      "DebtRemain": 0,
+      "DepartmentName": "ОСП по Центральному АО №1",
+      "DepartmentAddress": "129090, Россия, г. Москва, , , , пер. Коптельский 1-й, 14/16, 2, ",
+      "Status": "Paid",
+      "CompletionDate": "2020-08-15T00:00:00",
+      "CompletionReason": null,
+      "CompletionReasonText": null
+    }
+  ]
+}

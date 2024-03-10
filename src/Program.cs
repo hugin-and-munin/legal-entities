@@ -1,11 +1,15 @@
 using LegalEntities;
 using LegalEntities.Database;
 using LegalEntities.Reputation;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.WebHost.ConfigureKestrel(kestrel =>
+    kestrel.ConfigureEndpointDefaults(listen => listen.Protocols = HttpProtocols.Http2));
+
 builder.Services.AddHttpClient<ReputationApi>();
+builder.Services.AddHealthChecks().AddCheck<HealthCheck>("Health");
 builder.Services.AddSingleton<IReputationApi, ReputationApi>();
 builder.Services.AddSingleton<IRepository, Repository>();
 builder.Services.AddGrpc();
@@ -16,6 +20,6 @@ builder.Services.AddOptions<AppOptions>()
 var app = builder.Build();
 
 app.MapGrpcService<LegalEntities.LegalEntityChecker>();
-app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client.");
+app.MapHealthChecks("/health");
 
-app.Run();
+await app.RunAsync();

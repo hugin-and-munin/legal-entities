@@ -1,6 +1,5 @@
 using System.Text.Json;
 using LegalEntities.Database;
-using LegalEntities.Service;
 using LegalEntityChecker;
 using Microsoft.Extensions.Options;
 

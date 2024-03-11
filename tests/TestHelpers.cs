@@ -1,5 +1,5 @@
 using LegalEntities.Database;
-using LegalEntities.Migrator;
+using LegalEntities.Database.Migrator;
 using LegalEntities.Reputation;
 using LegalEntityChecker;
 using Microsoft.Extensions.Options;
@@ -39,8 +39,9 @@ public static class TestHelpers
     public static Repository GetRepository(this PostgreSqlContainer postgres)
     {
         var connectionString = postgres.GetConnectionString();
-        MigrationRunner.MigrateUp(connectionString);
         var options = GetOptions(connectionString: connectionString);
+        var migrationRunner = new MigrationRunner(options);
+        migrationRunner.MigrateUp();
         return new Repository(options);
     }
 

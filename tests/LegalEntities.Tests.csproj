@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="../src/LegalEntities.csproj" />
-    <ProjectReference Include="../migrator/LegalEntities.Migrator.csproj" />
   </ItemGroup>
 
   <ItemGroup>

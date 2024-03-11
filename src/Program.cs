@@ -10,7 +10,6 @@ builder.WebHost.ConfigureKestrel(kestrel =>
     kestrel.ConfigureEndpointDefaults(listen => listen.Protocols = HttpProtocols.Http2));
 
 builder.Services.AddHttpClient<ReputationApi>();
-builder.Services.AddHealthChecks().AddCheck<HealthCheck>("Health");
 builder.Services.AddSingleton<IReputationApi, ReputationApi>();
 builder.Services.AddSingleton<IRepository, Repository>();
 builder.Services.AddSingleton<MigrationRunner>();
@@ -22,7 +21,7 @@ builder.Services.AddOptions<AppOptions>()
 var app = builder.Build();
 
 app.MapGrpcService<LegalEntities.LegalEntityChecker>();
-app.MapHealthChecks("/health");
+app.MapGrpcService<HealthCheck>();
 
 app.Services.GetRequiredService<MigrationRunner>().MigrateUp();
 

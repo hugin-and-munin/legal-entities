@@ -1,23 +1,16 @@
-using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Grpc.Core;
+using Grpc.Health.V1;
+using static Grpc.Health.V1.HealthCheckResponse.Types;
 
 namespace LegalEntities;
 
-public class HealthCheck : IHealthCheck
+public class HealthCheck : Health.HealthBase
 {
-    public Task<HealthCheckResult> CheckHealthAsync(
-        HealthCheckContext context,
-        CancellationToken cancellationToken = default)
+    public override Task<HealthCheckResponse> Check(HealthCheckRequest request, ServerCallContext context)
     {
-        var isHealthy = true;
-
-        if (isHealthy)
+        return Task.FromResult(new HealthCheckResponse()
         {
-            return Task.FromResult(
-                HealthCheckResult.Healthy("A healthy result."));
-        }
-
-        return Task.FromResult(
-            new HealthCheckResult(
-                context.Registration.FailureStatus, "An unhealthy result."));
+            Status = ServingStatus.Serving
+        });
     }
 }

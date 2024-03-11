@@ -1,5 +1,6 @@
 using LegalEntities;
 using LegalEntities.Database;
+using LegalEntities.Database.Migrator;
 using LegalEntities.Reputation;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 
@@ -12,6 +13,7 @@ builder.Services.AddHttpClient<ReputationApi>();
 builder.Services.AddHealthChecks().AddCheck<HealthCheck>("Health");
 builder.Services.AddSingleton<IReputationApi, ReputationApi>();
 builder.Services.AddSingleton<IRepository, Repository>();
+builder.Services.AddSingleton<MigrationRunner>();
 builder.Services.AddGrpc();
 builder.Services.AddOptions<AppOptions>()
     .Bind(builder.Configuration.GetSection(AppOptions.Name))
@@ -21,5 +23,7 @@ var app = builder.Build();
 
 app.MapGrpcService<LegalEntities.LegalEntityChecker>();
 app.MapHealthChecks("/health");
+
+app.Services.GetRequiredService<MigrationRunner>().MigrateUp();
 
 await app.RunAsync();

@@ -1,6 +1,6 @@
 using FluentMigrator;
 
-namespace LegalEntities.Migrator.Migrations;
+namespace LegalEntities.Database.Migrator.Migrations;
 
 [Migration(20240201, "Creates LegalEntities table")]
 public class CreateLegalEntitiesTable : Migration

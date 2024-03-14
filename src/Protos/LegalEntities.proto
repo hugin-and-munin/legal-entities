@@ -17,7 +17,7 @@ message LegalEntityInfoReponse {
   // Дата регистрации юридического лица
   int64 incorporationDate = 3;
   // Уставной капитал (без десятых долей)
-  int32 authorizedCapital = 4;
+  double authorizedCapital = 4;
   // Численность сотрудников
   int32 employeesNumber = 5;
   // Юридический адрес

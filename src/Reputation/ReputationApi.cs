@@ -25,9 +25,9 @@ public class ReputationApi : IReputationApi
         return new LegalEntityInfoReponse()
         {
             Name = companyInfo.Names.Items.FirstOrDefault()?.ShortName ?? string.Empty,
-            Tin = Convert.ToInt64(companyInfo.Inn),
+            Tin = long.TryParse(companyInfo.Inn, out var tin) ? tin : -1,
             IncorporationDate = companyInfo.RegistrationDate?.ToUnixTimeSeconds() ?? -1,
-            AuthorizedCapital = Convert.ToInt32(companyInfo.AuthorizedCapitals.Items.FirstOrDefault()?.Sum ?? -1),
+            AuthorizedCapital = companyInfo.AuthorizedCapitals.Items.FirstOrDefault()?.Sum ?? -1,
             EmployeesNumber = companyInfo.EmployeesInfo.Items.FirstOrDefault()?.Count ?? -1,
             Address = companyInfo.Addresses.Items.FirstOrDefault()?.UnsplittedAddress ?? string.Empty,
             LegalEntityStatus = companyInfo.Status.Status switch

@@ -24,6 +24,8 @@ message LegalEntityInfoReponse {
   string address = 6;
   // Статус
   LegalEntityStatus legalEntityStatus = 7;
+  // Есть сведения о невыплате зарплаты
+  bool salaryDelays = 8;
 }
 
 // Статус юридического лица

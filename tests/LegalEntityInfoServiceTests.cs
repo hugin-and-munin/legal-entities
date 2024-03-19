@@ -31,7 +31,7 @@ public class LegalEntityCheckerTests
     public async Task RequestOfNewCompanyCausesApiCall()
     {
         // Arrange
-        var expected = TestHelpers.ExpectedLegalEntityInfoReponse;
+        var expected = TestHelpers.SvyaznoyInfo;
         var apiMock = TestHelpers.GetReputationApiMock(expected);
         var sut = new LegalEntityChecker(apiMock.Object);
 
@@ -47,7 +47,7 @@ public class LegalEntityCheckerTests
     public async Task MultipleRequestOfCachedCompanyCausesOnlyOneApiCall()
     {
         // Arrange
-        var expected = TestHelpers.ExpectedLegalEntityInfoReponse;
+        var expected = TestHelpers.SvyaznoyInfo;
         var apiMock = TestHelpers.GetReputationApiMock(expected);
         var sut = new LegalEntityChecker(apiMock.Object);
 

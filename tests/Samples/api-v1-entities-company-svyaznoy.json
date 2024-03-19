@@ -1,0 +1,2335 @@
+{
+  "Type": "Company",
+  "Link": "ogrn/1057748288850",
+  "Ogrn": "1057748288850",
+  "Inn": "7714617793",
+  "Kpp": "771401001",
+  "Pfr": "087216004560",
+  "Fss": "772002534977201",
+  "Opf": "12300",
+  "Okpo": "78961775",
+  "Oktmo": "45348000000",
+  "Okfs": "34",
+  "Okopf": "12300",
+  "Okogu": "4210011",
+  "Okato": "45277598000",
+  "RegistrationDate": "2005-09-20T00:00:00",
+  "Status": {
+    "Status": "InTerminationProcess",
+    "StatusText": "Юридическое лицо признано несостоятельным (банкротом) и в отношении него открыто конкурсное производство",
+    "Reason": "BankruptcyProceedingsOpened",
+    "ReasonText": "Юридическое лицо признано несостоятельным (банкротом) и в отношении него открыто конкурсное производство",
+    "IsActual": true,
+    "Date": "2023-12-24T00:00:00"
+  },
+  "Names": {
+    "TotalItems": 3,
+    "Items": [
+      {
+        "ShortName": "ООО \"СЕТЬ СВЯЗНОЙ\"",
+        "FullName": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "IsActual": true,
+        "Date": "2018-09-11T00:00:00"
+      },
+      {
+        "ShortName": "ООО \"ЕВРОСЕТЬ-РИТЕЙЛ\"",
+        "FullName": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЕВРОСЕТЬ-РИТЕЙЛ\"",
+        "IsActual": false,
+        "Date": "2009-03-03T00:00:00"
+      },
+      {
+        "ShortName": "ООО \"ЕВРОСЕТЬ ОПТ\"",
+        "FullName": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЕВРОСЕТЬ ОПТ\"",
+        "IsActual": false,
+        "Date": null
+      }
+    ]
+  },
+  "ActivityTypes": {
+    "TotalItems": 57,
+    "Items": [
+      {
+        "Code": "47.42",
+        "Name": "ТОРГОВЛЯ РОЗНИЧНАЯ ТЕЛЕКОММУНИКАЦИОННЫМ ОБОРУДОВАНИЕМ, ВКЛЮЧАЯ РОЗНИЧНУЮ ТОРГОВЛЮ МОБИЛЬНЫМИ ТЕЛЕФОНАМИ, В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+        "IsMain": true,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2020-04-17T00:00:00"
+      },
+      {
+        "Code": "49.41.2",
+        "Name": "ПЕРЕВОЗКА ГРУЗОВ НЕСПЕЦИАЛИЗИРОВАННЫМИ АВТОТРАНСПОРТНЫМИ СРЕДСТВАМИ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2021-08-18T00:00:00"
+      },
+      {
+        "Code": "13.95",
+        "Name": "ПРОИЗВОДСТВО НЕТКАНЫХ ТЕКСТИЛЬНЫХ МАТЕРИАЛОВ И ИЗДЕЛИЙ ИЗ НИХ, КРОМЕ ОДЕЖДЫ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2020-05-29T00:00:00"
+      },
+      {
+        "Code": "70.10.2",
+        "Name": "ДЕЯТЕЛЬНОСТЬ ПО УПРАВЛЕНИЮ ХОЛДИНГ-КОМПАНИЯМИ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2020-04-17T00:00:00"
+      },
+      {
+        "Code": "47.43",
+        "Name": "ТОРГОВЛЯ РОЗНИЧНАЯ АУДИО- И ВИДЕОТЕХНИКОЙ В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2020-04-17T00:00:00"
+      },
+      {
+        "Code": "47.41",
+        "Name": "ТОРГОВЛЯ РОЗНИЧНАЯ КОМПЬЮТЕРАМИ, ПЕРИФЕРИЙНЫМИ УСТРОЙСТВАМИ К НИМ И ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2020-04-17T00:00:00"
+      },
+      {
+        "Code": "47.24.2",
+        "Name": "ТОРГОВЛЯ РОЗНИЧНАЯ КОНДИТЕРСКИМИ ИЗДЕЛИЯМИ В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2014-09-26T00:00:00"
+      },
+      {
+        "Code": "45.3",
+        "Name": "ТОРГОВЛЯ АВТОМОБИЛЬНЫМИ ДЕТАЛЯМИ, УЗЛАМИ И ПРИНАДЛЕЖНОСТЯМИ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2011-12-26T00:00:00"
+      },
+      {
+        "Code": "45.20",
+        "Name": "ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ АВТОТРАНСПОРТНЫХ СРЕДСТВ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2011-12-26T00:00:00"
+      },
+      {
+        "Code": "70.22",
+        "Name": "КОНСУЛЬТИРОВАНИЕ ПО ВОПРОСАМ КОММЕРЧЕСКОЙ ДЕЯТЕЛЬНОСТИ И УПРАВЛЕНИЯ",
+        "IsMain": false,
+        "Version": "2014",
+        "IsActual": true,
+        "Date": "2011-12-26T00:00:00"
+      }
+    ]
+  },
+  "AuthorizedCapitals": {
+    "TotalItems": 2,
+    "Items": [
+      {
+        "Sum": 32143400,
+        "Type": "УСТАВНЫЙКАПИТАЛ",
+        "IsActual": true,
+        "Date": "2019-04-08T00:00:00"
+      },
+      {
+        "Sum": 8080000,
+        "Type": "УСТАВНЫЙКАПИТАЛ",
+        "IsActual": false,
+        "Date": "2011-12-26T00:00:00"
+      }
+    ]
+  },
+  "EmployeesInfo": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Addresses": {
+    "TotalItems": 9,
+    "Items": [
+      {
+        "Id": "e9523575-d442-4725-877c-a31ddd9bf61e",
+        "RegionType": null,
+        "RegionName": "Г.Москва",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПР-Д",
+        "StreetName": "2-Й ХОРОШЁВСКИЙ",
+        "Postcode": "123007",
+        "RegionCode": "77",
+        "KladrCode": "770000000003045",
+        "GarCode": null,
+        "House": "Д. 9",
+        "Housing": "К. 2",
+        "Office": "ЭТАЖ 5 КОМН 4",
+        "UnsplittedAddress": "123007,  Г.Москва, ПР-Д 2-Й ХОРОШЁВСКИЙ, Д. 9, К. 2, ЭТАЖ 5 КОМН 4",
+        "OnAddressCount": 1,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": true,
+        "Date": "2019-06-03T00:00:00"
+      },
+      {
+        "Id": "0f256068-2248-41f4-9e36-ee5beb9a0a93",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПРОЕЗД",
+        "StreetName": "ХОРОШЁВСКИЙ 2-Й",
+        "Postcode": "123007",
+        "RegionCode": "77",
+        "KladrCode": "770000000003045",
+        "GarCode": null,
+        "House": "ДОМ 9",
+        "Housing": "КОРПУС 2",
+        "Office": "ЭТАЖ 5 КОМН 4",
+        "UnsplittedAddress": "123007, ГОРОД МОСКВА, ПРОЕЗД ХОРОШЁВСКИЙ 2-Й, ДОМ 9, КОРПУС 2, ЭТАЖ 5 КОМН 4",
+        "OnAddressCount": 0,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2019-06-03T00:00:00"
+      },
+      {
+        "Id": "e6c7864d-d738-478d-bb69-67a66016adcb",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПР-Д",
+        "StreetName": "2-Й ХОРОШЁВСКИЙ",
+        "Postcode": "123007",
+        "RegionCode": "77",
+        "KladrCode": "770000000003045",
+        "GarCode": null,
+        "House": "Д. 9",
+        "Housing": "К. 2",
+        "Office": "ЭТАЖ 5 КОМН 4",
+        "UnsplittedAddress": "123007, ГОРОД МОСКВА, ПР-Д 2-Й ХОРОШЁВСКИЙ, Д. 9, К. 2, ЭТАЖ 5 КОМН 4",
+        "OnAddressCount": 1,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2019-06-03T00:00:00"
+      },
+      {
+        "Id": "319943f4-5e47-414e-b456-6661a14ff2e3",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПРОЕЗД",
+        "StreetName": "2-Й ХОРОШЁВСКИЙ",
+        "Postcode": "123007",
+        "RegionCode": "77",
+        "KladrCode": "770000000003045",
+        "GarCode": null,
+        "House": "ДОМ 9",
+        "Housing": "КОРПУС 2",
+        "Office": "ЭТАЖ 5 КОМН 4",
+        "UnsplittedAddress": "123007, ГОРОД МОСКВА, ПРОЕЗД 2-Й ХОРОШЁВСКИЙ, ДОМ 9, КОРПУС 2, ЭТАЖ 5 КОМН 4",
+        "OnAddressCount": 0,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2019-06-03T00:00:00"
+      },
+      {
+        "Id": "a00b2f10-42d9-4c27-82fe-627912cd7f1d",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПР-Д",
+        "StreetName": "2-Й ХОРОШЁВСКИЙ",
+        "Postcode": "123007",
+        "RegionCode": "77",
+        "KladrCode": "770000000003045",
+        "GarCode": null,
+        "House": "ДОМ 9",
+        "Housing": "КОРПУС 2",
+        "Office": "ЭТАЖ 5 КОМН 4",
+        "UnsplittedAddress": "123007, ГОРОД МОСКВА, ПР-Д 2-Й ХОРОШЁВСКИЙ, ДОМ 9, КОРПУС 2, ЭТАЖ 5 КОМН 4",
+        "OnAddressCount": 0,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2019-06-03T00:00:00"
+      },
+      {
+        "Id": "d29a6a8b-a386-4cc5-8069-89c63ee78d83",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛИЦА",
+        "StreetName": "БЕГОВАЯ УЛИЦА",
+        "Postcode": "125284",
+        "RegionCode": "77",
+        "KladrCode": "770000000000826",
+        "GarCode": null,
+        "House": "3",
+        "Housing": "СТР.1",
+        "Office": "ЭТАЖ 36",
+        "UnsplittedAddress": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ УЛИЦА, 3, СТР.1, ЭТАЖ 36",
+        "OnAddressCount": 1,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2016-05-14T00:00:00"
+      },
+      {
+        "Id": "2df5d73d-5907-461f-ad03-15c895f56973",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛИЦА",
+        "StreetName": "БЕГОВАЯ",
+        "Postcode": "125284",
+        "RegionCode": "77",
+        "KladrCode": "770000000000826",
+        "GarCode": null,
+        "House": "3",
+        "Housing": "СТР.1",
+        "Office": "ЭТАЖ 36",
+        "UnsplittedAddress": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ, 3, СТР.1, ЭТАЖ 36",
+        "OnAddressCount": 1,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2012-01-25T00:00:00"
+      },
+      {
+        "Id": "76ad4eae-00dc-42e5-94d2-40c102a49817",
+        "RegionType": null,
+        "RegionName": null,
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": null,
+        "StreetName": null,
+        "Postcode": null,
+        "RegionCode": null,
+        "KladrCode": null,
+        "GarCode": null,
+        "House": null,
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "127015,ГОРОД МОСКВА, , , ,ПРОЕЗД БУМАЖНЫЙ,14,СТР.2,",
+        "OnAddressCount": 0,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2007-12-06T00:00:00"
+      },
+      {
+        "Id": "bb0cd315-ef16-4ae8-9ad3-42092d3beb37",
+        "RegionType": null,
+        "RegionName": null,
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": null,
+        "StreetName": null,
+        "Postcode": null,
+        "RegionCode": null,
+        "KladrCode": null,
+        "GarCode": null,
+        "House": null,
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "125167,ГОРОД МОСКВА, , , , ,6А,СТР.1,",
+        "OnAddressCount": 0,
+        "MassRegistration": [],
+        "UnreliabilityInfo": [],
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2005-09-20T00:00:00"
+      }
+    ]
+  },
+  "Rsmp": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Taxation": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Managers": {
+    "TotalItems": 10,
+    "Items": [
+      {
+        "Id": "06bda029-a5ec-4b1a-941f-97aee1b7c607",
+        "Date": "2023-12-24T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "11b4f1fe-abb5-4e53-a467-7da4e741fbcb",
+          "Type": "Person",
+          "Name": "АНГЕЛЕВСКИ ФИЛИПП МИТРЕВИЧ",
+          "Inn": "231906423308",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/231906423308",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "06",
+            "PositionTypeName": "Конкурсный управляющий",
+            "PositionName": "КОНКУРСНЫЙ УПРАВЛЯЮЩИЙ",
+            "Date": "2023-12-24T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "2c85d7ae-6a91-4de4-9697-ea940e3b45ce",
+        "Date": "2023-03-17T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "75e9479a-fea1-4514-b4ed-7cd3b5b2ff30",
+          "Type": "Person",
+          "Name": "ТАРАБУРИН АНДРЕЙ ВЛАДИМИРОВИЧ",
+          "Inn": "501205884500",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/501205884500",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ПРЕЗИДЕНТ",
+            "Date": "2023-03-17T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "0c0c493b-b1ec-43bc-865e-820b568ab829",
+        "Date": "2022-05-31T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "cdbcc0f6-b2df-4296-9d36-8ce3a2ffa459",
+          "Type": "Person",
+          "Name": "ВУКОЛОВ АЛЕКСЕЙ МИХАЙЛОВИЧ",
+          "Inn": "507001773803",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/507001773803",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ПРЕЗИДЕНТ",
+            "Date": "2022-05-31T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "98c8f020-3b09-4d11-bc67-0769c2b5985e",
+        "Date": "2021-09-23T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "7e36f1a9-1f8c-4356-a4b4-986f6dc49516",
+          "Type": "Person",
+          "Name": "ОНИЩЕНКО МАКСИМ АНАТОЛЬЕВИЧ",
+          "Inn": "711601196355",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/711601196355",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ПРЕЗИДЕНТ",
+            "Date": "2021-09-23T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "a124fa70-29ff-4439-a8d4-9908f46cd7f8",
+        "Date": "2019-12-09T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "8bc0dabd-c453-4f09-9c39-7250a24cdd03",
+          "Type": "Person",
+          "Name": "ДАВЫДОВИЧ ЕВГЕНИЙ ",
+          "Inn": "771004679741",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/771004679741",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ПРЕЗИДЕНТ",
+            "Date": "2019-12-09T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "2e7586dd-d662-40bf-a7fc-1dcfb8288eda",
+        "Date": "2019-06-18T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "d6f14346-1a85-43bf-9ee6-f0eb21812598",
+          "Type": "Person",
+          "Name": "ГУСЬКОВА ОКСАНА АЛЕКСАНДРОВНА",
+          "Inn": "504509899180",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/504509899180",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "Руководитель юридического лица",
+            "PositionName": "ПРЕЗИДЕНТ",
+            "Date": "2019-06-18T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "005a5751-eec7-4931-8a59-1dbe8ec329c3",
+        "Date": "2011-12-26T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "5dcb3041-d9ed-4928-9ea9-87bd6f3b05d7",
+          "Type": "Person",
+          "Name": "МАЛИС АЛЕКСАНДР АДОЛЬФОВИЧ",
+          "Inn": "773411905358",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/773411905358",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": "02",
+            "PositionTypeName": "РУКОВОДИТЕЛЬ ЮРИДИЧЕСКОГО ЛИЦА",
+            "PositionName": "ПРЕЗИДЕНТ",
+            "Date": "2011-12-26T00:00:00",
+            "IsActual": true
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "dad8ac32-47b6-4207-ac2e-551aafa70239",
+        "Date": "2005-09-20T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "6e609e8f-5442-4b89-8f6e-3c7beacf0755",
+          "Type": "Company",
+          "Name": "ООО \"УК \"ЕВРОСЕТЬ\"",
+          "Inn": "7714558393",
+          "Kpp": "771401001",
+          "Ogrn": "1047796468334",
+          "Link": "ogrn/1047796468334",
+          "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+          "ActivityType": "74.15.2 ДЕЯТЕЛЬНОСТЬ ПО УПРАВЛЕНИЮ ХОЛДИНГ-КОМПАНИЯМИ",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "5fc40b32-785b-4779-af09-7383d28cb17c",
+        "Date": null,
+        "IsActual": false,
+        "Entity": {
+          "Id": "dae4090c-a42d-4cf0-9156-5e6d366c76dc",
+          "Type": "Person",
+          "Name": "ДЕНИСОВ ДМИТРИЙ ВЛАДИМИРОВИЧ",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/30361071",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": null,
+            "PositionTypeName": null,
+            "PositionName": "ИСПОЛНИТЕЛЬНЫЙ ДИРЕКТОР",
+            "Date": null,
+            "IsActual": false
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "20b0a8c3-87d6-4d99-a442-fa1931d11f54",
+        "Date": null,
+        "IsActual": false,
+        "Entity": {
+          "Id": "56f9e4b2-689e-4a87-aafb-ee9e578d84a4",
+          "Type": "Person",
+          "Name": "РАЗРОЕВ ЭЛДАР АЛИ ОГЛЫ",
+          "Inn": "770900025756",
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "inn/770900025756",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Position": [
+          {
+            "PositionType": null,
+            "PositionTypeName": null,
+            "PositionName": "ПРЕЗИДЕНТ",
+            "Date": null,
+            "IsActual": false
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      }
+    ]
+  },
+  "AsManagers": {
+    "TotalItems": 7,
+    "Items": [
+      {
+        "Id": "0fb5fce4-3fca-4761-8686-92bbb25c2ac5",
+        "Date": "2009-10-20T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "e3d06ae0-a19e-4d53-aacf-81d97016f857",
+          "Type": "Company",
+          "Name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ФЕДЕРАЛЬНАЯ СИСТЕМА \"ЕВРОСЕТЬ\"",
+          "Inn": "7714520294",
+          "Kpp": "771401001",
+          "Ogrn": "1037739940721",
+          "Link": "ogrn/1037739940721",
+          "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+          "ActivityType": "52.48.15 РОЗНИЧНАЯ ТОРГОВЛЯ ОБОРУДОВАНИЕМ ЭЛЕКТРОСВЯЗИ",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "a03343af-3505-4745-bb00-cedc3c538812",
+        "Date": "2009-10-01T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "b5dd71e6-f603-475d-8259-53566beb9276",
+          "Type": "Company",
+          "Name": "ООО \" ЕВРОСЕТЬ МАХАЧКАЛА \"",
+          "Inn": "0561052043",
+          "Kpp": "056101001",
+          "Ogrn": "1050561001149",
+          "Link": "ogrn/1050561001149",
+          "Address": "367002,  Республика Дагестан, Г. МАХАЧКАЛА, ПР-КТ КОМСОМОЛЬСКИЙ, Д.23/1",
+          "ActivityType": "52.45.4 РОЗНИЧНАЯ ТОРГОВЛЯ ТЕХНИЧЕСКИМИ НОСИТЕЛЯМИ ИНФОРМАЦИИ (С ЗАПИСЯМИ И  БЕЗ ЗАПИСЕЙ)",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "0e35eccf-76f9-4898-8727-ebff292dfa54",
+        "Date": "2009-09-30T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "b8adb64c-befe-4ae6-83ce-d59ed6963547",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ МОС1\"",
+          "Inn": "7714605815",
+          "Kpp": "771401001",
+          "Ogrn": "1057747278874",
+          "Link": "ogrn/1057747278874",
+          "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+          "ActivityType": "51.47.32 ОПТОВАЯ ТОРГОВЛЯ ФОТОТОВАРАМИ И ОПТИЧЕСКИМИ ТОВАРАМИ",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "b70d2bed-4048-42df-a7ba-cc33f0448b4c",
+        "Date": "2009-09-24T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "09eaff78-b047-4191-94e1-747fec5f3a0b",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ ЦЕНТР\"",
+          "Inn": "7714605830",
+          "Kpp": "366101001",
+          "Ogrn": "1057747279083",
+          "Link": "ogrn/1057747279083",
+          "Address": "394033, ОБЛАСТЬ ВОРОНЕЖСКАЯ, ГОРОД ВОРОНЕЖ, ПРОСПЕКТ ЛЕНИНСКИЙ, 174П",
+          "ActivityType": "51.47.32 ОПТОВАЯ ТОРГОВЛЯ ФОТОТОВАРАМИ И ОПТИЧЕСКИМИ ТОВАРАМИ",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "5e76474d-eb4f-4588-8a03-1b7adf1fe57b",
+        "Date": "2009-09-08T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "9e69ef8e-7a94-4e10-9990-33571d0d09c2",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ НОВОСИБИРСК\"",
+          "Inn": "5404249641",
+          "Kpp": "540401001",
+          "Ogrn": "1055404083547",
+          "Link": "ogrn/1055404083547",
+          "Address": "630000, ОБЛАСТЬ НОВОСИБИРСКАЯ, ГОРОД НОВОСИБИРСК, УЛИЦА СТАНЦИОННАЯ, 30А",
+          "ActivityType": "64.20.11 ДЕЯТЕЛЬНОСТЬ В ОБЛАСТИ ТЕЛЕФОННОЙ СВЯЗИ",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "b7cee6f9-beea-4901-9182-a9b1443eaddc",
+        "Date": "2009-09-08T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "08e8b4be-633f-4e77-99be-2f287893660f",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ ЕКАТЕРИНБУРГ\"",
+          "Inn": "6670088516",
+          "Kpp": "667001001",
+          "Ogrn": "1056603583618",
+          "Link": "ogrn/1056603583618",
+          "Address": "620137, ОБЛАСТЬ СВЕРДЛОВСКАЯ, Г. ЕКАТЕРИНБУРГ, УЛ. БЛЮХЕРА, Д.32",
+          "ActivityType": "64.20 ДЕЯТЕЛЬНОСТЬ В ОБЛАСТИ ЭЛЕКТРОСВЯЗИ",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      },
+      {
+        "Id": "882354e5-8dee-458e-b31c-67b3edbf9410",
+        "Date": "2009-09-07T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "75abb8e6-a940-4359-8b67-d884b02a0387",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ КРАСНОДАР\"",
+          "Inn": "2310104155",
+          "Kpp": "231001001",
+          "Ogrn": "1052305727902",
+          "Link": "ogrn/1052305727902",
+          "Address": "350000, КРАЙ КРАСНОДАРСКИЙ, Г. КРАСНОДАР, УЛ. КРАСНАЯ, Д.162",
+          "ActivityType": "52.48.15 РОЗНИЧНАЯ ТОРГОВЛЯ ОБОРУДОВАНИЕМ ЭЛЕКТРОСВЯЗИ",
+          "Status": "Terminated"
+        },
+        "Position": [],
+        "UnreliabilityInfo": [],
+        "DisqualificationInfo": []
+      }
+    ]
+  },
+  "Shareholders": {
+    "TotalItems": 23,
+    "Items": [
+      {
+        "Id": "e63b354a-70f8-4f8b-a96a-2793dddc8875",
+        "Date": "2019-04-08T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "5d4d1cb3-5b8b-43b8-9cad-86fdae2d3b46",
+          "Type": "ForeignCompany",
+          "Name": "ДТСРЕТЕЙЛ ЛТД",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/5D4D1CB3-5B8B-43B8-9CAD-86FDAE2D3B46",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 22258645,
+            "Size": 69.25
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "c3e78980-4f6d-4c97-9bdf-31152c368eaa",
+        "Date": "2019-04-08T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "f933e6a2-b4d6-4a7c-869f-5179fab6ccc6",
+          "Type": "Company",
+          "Name": "АО \"ГРУППА КОМПАНИЙ \"СВЯЗНОЙ\"",
+          "Inn": "7703534714",
+          "Kpp": "772501001",
+          "Ogrn": "1047796913735",
+          "Link": "ogrn/1047796913735",
+          "Address": "115280,  Г.Москва, УЛ. ЛЕНИНСКАЯ СЛОБОДА, Д. 26, ПОМЕЩ. XII КОМНАТА 1",
+          "ActivityType": "46.15.4 ДЕЯТЕЛЬНОСТЬ АГЕНТОВ ПО ОПТОВОЙ ТОРГОВЛЕ РАДИО- И ТЕЛЕАППАРАТУРОЙ, ТЕХНИЧЕСКИМИ НОСИТЕЛЯМИ ИНФОРМАЦИИ",
+          "Status": "Active"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 1804755,
+            "Size": 5.61
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "70961a87-a28e-4062-87d9-f97a9abb9dca",
+        "Date": "2019-04-08T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "29f51da4-40f9-4d99-bc4a-9a26ed07088d",
+          "Type": "ForeignCompany",
+          "Name": "ДТСРЕТЕЙЛ ЛТД",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/29F51DA4-40F9-4D99-BC4A-9A26ED07088D",
+          "Address": "КИПР, КИПР, ЛИМАСОЛ, 3026 АРХИЕПИСКОПУ МАКАРИУ III, 155, ПРОТЕАС ХАУС, 5-ЫЙ ЭТАЖ",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 22258645,
+            "Size": 69.25
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "f84229e3-9123-4fc6-8c93-20741114a8b6",
+        "Date": "2011-12-26T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "1e0661ec-512a-4b71-ac26-445c4f3d5174",
+          "Type": "ForeignCompany",
+          "Name": "СИННАМОН ШОР ЛТД.",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/1E0661EC-512A-4B71-AC26-445C4F3D5174",
+          "Address": "ВИРГИНСКИЕ ОСТРОВА, БРИТАНСКИЕ, МАДУРО БИЛДИНГ, БОГЕРС БЭЙ, П.Я. 3483, РОУД ТАУН, ТОРТОЛА, БРИТАНСКИЕ ВИРГИНСКИЕ ОСТРОВА",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 80800,
+            "Size": 0.25
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "5849c98f-e31e-4dd4-8285-9e64f94b7ac2",
+        "Date": "2011-12-26T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "3483a99f-2f0a-4c0f-b0fa-56f55c9f04da",
+          "Type": "ForeignCompany",
+          "Name": "ЕВРОСЕТЬ ХОЛДИНГ Н.В.",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/3483A99F-2F0A-4C0F-B0FA-56F55C9F04DA",
+          "Address": "НИДЕРЛАНДЫ, КОРОЛЕВСТВО, ВЕЕНА 690, 3012CN РОТТЕРДАМ, НИДЕРЛАНДЫ",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 7999200,
+            "Size": 24.89
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "abeb6b7a-e0c6-4be2-9708-a77b54475188",
+        "Date": "2011-12-26T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "a36f0bd5-d42f-468f-99b1-2c22ca69072c",
+          "Type": "ForeignCompany",
+          "Name": "СИННАМОН ШОР ЛТД.",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/A36F0BD5-D42F-468F-99B1-2C22CA69072C",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 80800,
+            "Size": 0.25
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "70f7fdb6-14dc-4165-befa-0cc6ae7ce507",
+        "Date": "2011-12-26T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "751a0ce3-ee6a-4d7c-bf1d-db75ac63268a",
+          "Type": "ForeignCompany",
+          "Name": "ЕВРОСЕТЬ ХОЛДИНГ Н.В.",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/751A0CE3-EE6A-4D7C-BF1D-DB75AC63268A",
+          "Address": null,
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 7999200,
+            "Size": 24.89
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "150b00e1-c09e-485b-9832-73cad32c253b",
+        "Date": "2019-04-08T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "0bdd61ac-c5d7-4c6e-8d26-db9446d236e4",
+          "Type": "ForeignCompany",
+          "Name": "ДТСРЕТЕЙЛ ЛТД",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/0BDD61AC-C5D7-4C6E-8D26-DB9446D236E4",
+          "Address": "КИПР, КИПР, ЛИМАСОЛ, 3026 АРХИЕПИСКОПУ МАКАРИУ III, 155, ПРОТЕАС ХАУС, 5-ЫЙ ЭТАЖ",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-04-08T00:00:00",
+            "FaceValue": 22258645,
+            "Size": 69.25
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "72456f68-6659-4b33-b1aa-054a09c604d5",
+        "Date": "2015-06-24T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "9aa4d9e1-4d7e-4ebc-91e5-146bb06fa6f9",
+          "Type": "ForeignCompany",
+          "Name": "СИННАМОН ШОР ЛТД.",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/9AA4D9E1-4D7E-4EBC-91E5-146BB06FA6F9",
+          "Address": "КИПР, Р.Г. ХОДЖ ПЛАЗА, 3 ЭТАЖ, РОУД ТАУН, ТОРТОЛА, БРИТАНСКИЕ ВИРГИНСКИЕ ОСТРОВА",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2015-06-24T00:00:00",
+            "FaceValue": 80800,
+            "Size": 1
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "13fadf65-f85b-4223-9bd9-e527a3459c24",
+        "Date": "2012-05-24T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "b2873b44-2103-4b3a-bd8a-ea74ef5abd51",
+          "Type": "ForeignCompany",
+          "Name": "ЕВРОСЕТЬ ХОЛДИНГ Н.В.",
+          "Inn": null,
+          "Kpp": null,
+          "Ogrn": null,
+          "Link": "foreign-entity/B2873B44-2103-4B3A-BD8A-EA74EF5ABD51",
+          "Address": "НИДЕРЛАНДЫ, ХЕРИКЕРБЕРГВЕГ 210, 1101 СМ АМСТЕРДАМ ЗЮЙДОСТ, НИДЕРЛАНДЫ",
+          "ActivityType": null,
+          "Status": null
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2012-05-24T00:00:00",
+            "FaceValue": 7999200,
+            "Size": 99
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      }
+    ]
+  },
+  "AsShareholders": {
+    "TotalItems": 9,
+    "Items": [
+      {
+        "Id": "8ac2e610-7957-4ff4-999c-e4496ee97d31",
+        "Date": "2019-04-12T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "357dd222-f495-4385-a0e7-04ed8c4bd25b",
+          "Type": "Company",
+          "Name": "ООО \"СВЯЗНОЙ СЕРВИС\"",
+          "Inn": "7810287065",
+          "Kpp": "781001001",
+          "Ogrn": "1037821068526",
+          "Link": "ogrn/1037821068526",
+          "Address": "196006,  Г.Санкт-Петербург, ПР-КТ МОСКОВСКИЙ, Д. 109, ЛИТЕР А, ЭТАЖ 4 ПОМЕЩЕНИЕ 9Н,ОФИС 413",
+          "ActivityType": "95.12 РЕМОНТ КОММУНИКАЦИОННОГО ОБОРУДОВАНИЯ",
+          "Status": "InTerminationProcess"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2019-11-25T00:00:00",
+            "FaceValue": 10001,
+            "Size": 50.005
+          },
+          {
+            "IsActual": false,
+            "Date": "2019-04-12T00:00:00",
+            "FaceValue": 10000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "2b78ba4b-9c93-4be0-8035-4caf432990f5",
+        "Date": "2013-02-08T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "0a6fbbbf-1179-484e-8402-ba0abfa05a32",
+          "Type": "Company",
+          "Name": "ООО \"СИГМА ТРЕЙД\"",
+          "Inn": "7722780000",
+          "Kpp": "772201001",
+          "Ogrn": "1127746504984",
+          "Link": "ogrn/1127746504984",
+          "Address": "111024, ГОРОД МОСКВА, УЛ. АВИАМОТОРНАЯ, Д.30, КВ.6",
+          "ActivityType": "52.48 ПРОЧАЯ РОЗНИЧНАЯ ТОРГОВЛЯ В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+          "Status": "Terminated"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2013-02-08T00:00:00",
+            "FaceValue": 3990000,
+            "Size": 100
+          },
+          {
+            "IsActual": false,
+            "Date": "2012-06-29T00:00:00",
+            "FaceValue": 4000000,
+            "Size": null
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "ccefca80-eaed-41d2-96d6-67fb9bf48ec3",
+        "Date": "2012-05-11T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "6d605c0c-1153-457b-9ef7-1da02213e34d",
+          "Type": "Company",
+          "Name": "ООО \"ПРО-СЕРВИС\"",
+          "Inn": "7714297060",
+          "Kpp": "772401001",
+          "Ogrn": "1037714008914",
+          "Link": "ogrn/1037714008914",
+          "Address": "115492, ГОРОД МОСКВА, УЛ. РАДИАЛЬНАЯ 6-Я, Д.18, СТР.5",
+          "ActivityType": "95.22.1 РЕМОНТ БЫТОВОЙ ТЕХНИКИ",
+          "Status": "Terminated"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2012-05-11T00:00:00",
+            "FaceValue": 1,
+            "Size": 0.01
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "993618bd-74c8-44a8-88b5-ccfd85460ba1",
+        "Date": "2012-03-30T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "66f44c5b-61be-4b46-bff5-3e9f65a0af76",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ МЕНЕДЖМЕНТ\"",
+          "Inn": "7714868490",
+          "Kpp": "771401001",
+          "Ogrn": "1127746228686",
+          "Link": "ogrn/1127746228686",
+          "Address": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ, 3, СТР.1, ЭТ.36",
+          "ActivityType": "74.15.2 ДЕЯТЕЛЬНОСТЬ ПО УПРАВЛЕНИЮ ХОЛДИНГ-КОМПАНИЯМИ",
+          "Status": "Terminated"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2012-03-30T00:00:00",
+            "FaceValue": 2450049,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "83541bc4-4e62-421f-a256-9cfcac5b3a10",
+        "Date": "2012-02-02T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "52042dcd-f1f7-44dd-bf44-0cb541f56846",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ КАПИТАЛ\"",
+          "Inn": "7714848737",
+          "Kpp": "771401001",
+          "Ogrn": "1117746658370",
+          "Link": "ogrn/1117746658370",
+          "Address": "125284, ГОРОД МОСКВА, УЛ. БЕГОВАЯ, Д.3, СТР.1, ЭТАЖ 36",
+          "ActivityType": "65.1 ДЕНЕЖНОЕ ПОСРЕДНИЧЕСТВО",
+          "Status": "Terminated"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2012-02-02T00:00:00",
+            "FaceValue": 10000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "c4f9b417-b663-45ed-a045-baa50b56d4b8",
+        "Date": "2012-01-24T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "a8bae6aa-f984-47a6-be16-a0d0cef4bb3f",
+          "Type": "Company",
+          "Name": "ООО \"ЭЛЕКТРОСВЯЗЬ\"",
+          "Inn": "7714826780",
+          "Kpp": "771401001",
+          "Ogrn": "5107746056281",
+          "Link": "ogrn/5107746056281",
+          "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+          "ActivityType": "64.20 ДЕЯТЕЛЬНОСТЬ В ОБЛАСТИ ЭЛЕКТРОСВЯЗИ",
+          "Status": "Terminated"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2012-01-24T00:00:00",
+            "FaceValue": 10000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "853a641d-7965-4b7d-b09b-555d96027c5f",
+        "Date": "2011-12-16T00:00:00",
+        "IsActual": true,
+        "Entity": {
+          "Id": "69258d9a-8068-43b5-b25b-885c5d46e19e",
+          "Type": "Company",
+          "Name": "ООО \"РАЗНОЦВЕТНАЯ ПЛАНЕТА\"",
+          "Inn": "7702751995",
+          "Kpp": "771401001",
+          "Ogrn": "1117746052368",
+          "Link": "ogrn/1117746052368",
+          "Address": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ, 3, СТР.1, ЭТ.36",
+          "ActivityType": "52.48.1 СПЕЦИАЛИЗИРОВАННАЯ РОЗНИЧНАЯ ТОРГОВЛЯ ОФИСНОЙ МЕБЕЛЬЮ, ОФИСНЫМ  ОБОРУДОВАНИЕМ, КОМПЬЮТЕРАМИ, ОПТИЧЕСКИМИ ПРИБОРАМИ И ФОТОАППАРАТУРОЙ",
+          "Status": "Terminated"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2011-12-16T00:00:00",
+            "FaceValue": 9999,
+            "Size": 99.99
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "ccd5feb5-69f1-4d1c-a5fc-cd173423c296",
+        "Date": "2018-12-13T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "14ba3cbd-df00-4c0c-8f20-02e3f076e51d",
+          "Type": "Company",
+          "Name": "БФ \"ПОДАРИ НАДЕЖДУ\"",
+          "Inn": "7714558298",
+          "Kpp": "772501001",
+          "Ogrn": "1047796466849",
+          "Link": "ogrn/1047796466849",
+          "Address": "115280,  Г.Москва, УЛ ЛЕНИНСКАЯ СЛОБОДА, Д. 26, ЭТАЖ/ПОМЕЩ./КОМ. -1/IV/116",
+          "ActivityType": "64.99 ПРЕДОСТАВЛЕНИЕ ПРОЧИХ ФИНАНСОВЫХ УСЛУГ, КРОМЕ УСЛУГ ПО СТРАХОВАНИЮ И ПЕНСИОННОМУ ОБЕСПЕЧЕНИЮ, НЕ ВКЛЮЧЕННЫХ В ДРУГИЕ ГРУППИРОВКИ",
+          "Status": "Active"
+        },
+        "Share": [],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      },
+      {
+        "Id": "54b7e38d-b9a9-4158-abb6-f320e4fd7faa",
+        "Date": "2017-04-19T00:00:00",
+        "IsActual": false,
+        "Entity": {
+          "Id": "754652ff-c747-44d9-888f-32c058fc41df",
+          "Type": "Company",
+          "Name": "ООО \"АРЕНДА ЕС\"",
+          "Inn": "9723027441",
+          "Kpp": "771301001",
+          "Ogrn": "1177746401304",
+          "Link": "ogrn/1177746401304",
+          "Address": "127083, ГОРОД МОСКВА, УЛИЦА 8 МАРТА, ДОМ 10, СТРОЕНИЕ 2, ЭТ 3 ПОМ 325",
+          "ActivityType": "70.10.2 ДЕЯТЕЛЬНОСТЬ ПО УПРАВЛЕНИЮ ХОЛДИНГ-КОМПАНИЯМИ",
+          "Status": "Terminated"
+        },
+        "Share": [
+          {
+            "IsActual": true,
+            "Date": "2017-11-28T00:00:00",
+            "FaceValue": 180010000,
+            "Size": 100
+          },
+          {
+            "IsActual": false,
+            "Date": "2017-04-19T00:00:00",
+            "FaceValue": 10000,
+            "Size": 100
+          }
+        ],
+        "UnreliabilityInfo": [],
+        "Pledge": []
+      }
+    ]
+  },
+  "Branches": {
+    "TotalItems": 56,
+    "Items": [
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"МОСКОВСКИЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 1,
+          "Items": [
+            {
+              "Kpp": "772343002",
+              "Inn": null,
+              "RegistrationDate": "2014-06-18T00:00:00",
+              "TaxOrganCode": "7723",
+              "TaxOrganName": "Инспекция Федеральной налоговой службы № 23 по г.Москве",
+              "IsActual": true,
+              "Date": "2019-03-27T00:00:00"
+            }
+          ]
+        },
+        "Id": "6c4ca119-af2f-44ce-b64e-7f8840c07770",
+        "RegionType": null,
+        "RegionName": "Г.Москва",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛ.",
+        "StreetName": "8-Я ТЕКСТИЛЬЩИКОВ",
+        "Postcode": "109129",
+        "RegionCode": "77",
+        "KladrCode": "770000000000218",
+        "GarCode": null,
+        "House": "Д. 8",
+        "Housing": null,
+        "Office": "ЭТАЖ/ПОМЕЩ./КОМ. 1/III/38",
+        "UnsplittedAddress": "109129,  Г.Москва, УЛ. 8-Я ТЕКСТИЛЬЩИКОВ, Д. 8, ЭТАЖ/ПОМЕЩ./КОМ. 1/III/38",
+        "OnAddressCount": 2,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": true,
+        "Date": "2010-02-09T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"УРАЛЬСКИЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 1,
+          "Items": [
+            {
+              "Kpp": "667143001",
+              "Inn": null,
+              "RegistrationDate": "2018-10-05T00:00:00",
+              "TaxOrganCode": "6671",
+              "TaxOrganName": "Инспекция Федеральной налоговой службы по Ленинскому району г.Екатеринбурга",
+              "IsActual": true,
+              "Date": "2019-03-27T00:00:00"
+            }
+          ]
+        },
+        "Id": "48e467ef-8728-4f52-aaaa-152653109743",
+        "RegionType": null,
+        "RegionName": "Свердловская область",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": "Г.",
+        "CityName": "Екатеринбург",
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛ.",
+        "StreetName": "ХОХРЯКОВА",
+        "Postcode": "620014",
+        "RegionCode": "66",
+        "KladrCode": "660000010001218",
+        "GarCode": null,
+        "House": "Д. 74",
+        "Housing": null,
+        "Office": "ЭТАЖ 3",
+        "UnsplittedAddress": "620014,  Свердловская область, Г. Екатеринбург, УЛ. ХОХРЯКОВА, Д. 74, ЭТАЖ 3",
+        "OnAddressCount": 1,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": true,
+        "Date": "2009-03-03T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"ЗАПАДНО-СИБИРСКИЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 1,
+          "Items": [
+            {
+              "Kpp": "540443002",
+              "Inn": null,
+              "RegistrationDate": "2022-06-09T00:00:00",
+              "TaxOrganCode": "5404",
+              "TaxOrganName": "Межрайонная инспекция Федеральной налоговой службы № 20 по Новосибирской области",
+              "IsActual": true,
+              "Date": "2022-06-08T00:00:00"
+            }
+          ]
+        },
+        "Id": "f77436ba-42f9-44f1-9aa3-8db9d5b512b8",
+        "RegionType": null,
+        "RegionName": "Новосибирская область",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": "Г",
+        "CityName": "НОВОСИБИРСК",
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПР-КТ",
+        "StreetName": "ДИМИТРОВА",
+        "Postcode": "630004",
+        "RegionCode": "54",
+        "KladrCode": "540000010000379",
+        "GarCode": null,
+        "House": "ЗД. 4/1",
+        "Housing": null,
+        "Office": "ЭТАЖ 12",
+        "UnsplittedAddress": "630004,  Новосибирская область, Г НОВОСИБИРСК, ПР-КТ ДИМИТРОВА, ЗД. 4/1, ЭТАЖ 12",
+        "OnAddressCount": 1,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": true,
+        "Date": "2009-03-03T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"ДАЛЬНЕВОСТОЧНЫЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЕВРОСЕТЬ-РИТЕЙЛ\"",
+        "TaxRegistrations": {
+          "TotalItems": 0,
+          "Items": []
+        },
+        "Id": "d868b3eb-84b6-4213-ad81-dcfe5d253d94",
+        "RegionType": "КРАЙ",
+        "RegionName": "ХАБАРОВСКИЙ",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": "ГОРОД",
+        "CityName": "ХАБАРОВСК",
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛИЦА",
+        "StreetName": "МУХИНА",
+        "Postcode": "680030",
+        "RegionCode": "27",
+        "KladrCode": "270000010000550",
+        "GarCode": null,
+        "House": "ДОМ 8",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "680030, КРАЙ ХАБАРОВСКИЙ, ГОРОД ХАБАРОВСК, УЛИЦА МУХИНА, ДОМ 8",
+        "OnAddressCount": 5,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2014-06-18T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"МОСКОВСКИЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 1,
+          "Items": [
+            {
+              "Kpp": "772343002",
+              "Inn": null,
+              "RegistrationDate": "2014-06-18T00:00:00",
+              "TaxOrganCode": "7723",
+              "TaxOrganName": "Инспекция Федеральной налоговой службы № 23 по г.Москве",
+              "IsActual": true,
+              "Date": "2019-03-27T00:00:00"
+            }
+          ]
+        },
+        "Id": "6a5f03a2-6c59-4e64-9242-15e77dbc1c2f",
+        "RegionType": "ГОРОД",
+        "RegionName": "МОСКВА",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПРОЕЗД",
+        "StreetName": "ЮЖНОПОРТОВЫЙ 2-Й",
+        "Postcode": "115088",
+        "RegionCode": "77",
+        "KladrCode": "770000000000156",
+        "GarCode": null,
+        "House": "ДОМ 18",
+        "Housing": null,
+        "Office": "СТРОЕНИЕ 2",
+        "UnsplittedAddress": "115088, ГОРОД МОСКВА, ПРОЕЗД ЮЖНОПОРТОВЫЙ 2-Й, ДОМ 18, СТРОЕНИЕ 2",
+        "OnAddressCount": 4,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2014-06-18T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"СЕВЕРО-ЗАПАДНЫЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 0,
+          "Items": []
+        },
+        "Id": "df61ae13-6c2f-49f5-b4fc-dcd57b55f06c",
+        "RegionType": "ГОРОД",
+        "RegionName": "САНКТ-ПЕТЕРБУРГ",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "ПРОСПЕКТ",
+        "StreetName": "СРЕДНИЙ В.О.",
+        "Postcode": "199004",
+        "RegionCode": "78",
+        "KladrCode": "780000000001330",
+        "GarCode": null,
+        "House": "36/40",
+        "Housing": "ЛИТ.А",
+        "Office": null,
+        "UnsplittedAddress": "199004, ГОРОД САНКТ-ПЕТЕРБУРГ, ПРОСПЕКТ СРЕДНИЙ В.О., 36/40, ЛИТ.А",
+        "OnAddressCount": 2,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2012-05-22T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"СЕВЕРО-ЗАПАДНЫЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 2,
+          "Items": [
+            {
+              "Kpp": "780143002",
+              "Inn": null,
+              "RegistrationDate": "2012-05-23T00:00:00",
+              "TaxOrganCode": "7801",
+              "TaxOrganName": "Межрайонная инспекция Федеральной налоговой службы №16 по Санкт-Петербургу",
+              "IsActual": false,
+              "Date": "2019-03-28T00:00:00"
+            },
+            {
+              "Kpp": "784143001",
+              "Inn": null,
+              "RegistrationDate": "2018-10-05T00:00:00",
+              "TaxOrganCode": "7841",
+              "TaxOrganName": "Межрайонная инспекция Федеральной налоговой службы №10 по Санкт-Петербургу",
+              "IsActual": true,
+              "Date": "2019-03-27T00:00:00"
+            }
+          ]
+        },
+        "Id": "7337cd1e-8ff4-491d-bd4c-3f0c6b246d96",
+        "RegionType": "ГОРОД",
+        "RegionName": "САНКТ-ПЕТЕРБУРГ",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛИЦА",
+        "StreetName": "БОЛЬШАЯ КОНЮШЕННАЯ",
+        "Postcode": "191186",
+        "RegionCode": "78",
+        "KladrCode": "780000000000112",
+        "GarCode": null,
+        "House": "ДОМ 27",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "191186, ГОРОД САНКТ-ПЕТЕРБУРГ, УЛИЦА БОЛЬШАЯ КОНЮШЕННАЯ, ДОМ 27",
+        "OnAddressCount": 4,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2012-05-22T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"СЕВЕРО-ЗАПАДНЫЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 2,
+          "Items": [
+            {
+              "Kpp": "784143001",
+              "Inn": null,
+              "RegistrationDate": "2022-09-19T00:00:00",
+              "TaxOrganCode": "7840",
+              "TaxOrganName": "Межрайонная инспекция Федеральной налоговой службы №9 по Санкт-Петербургу",
+              "IsActual": true,
+              "Date": "2022-09-19T00:00:00"
+            },
+            {
+              "Kpp": "784143001",
+              "Inn": null,
+              "RegistrationDate": "2018-10-05T00:00:00",
+              "TaxOrganCode": "7841",
+              "TaxOrganName": "Межрайонная инспекция Федеральной налоговой службы №10 по Санкт-Петербургу",
+              "IsActual": false,
+              "Date": "2019-03-28T00:00:00"
+            }
+          ]
+        },
+        "Id": "89fd0046-3bf9-4455-bb1a-41334579fd53",
+        "RegionType": "ГОРОД",
+        "RegionName": "САНКТ-ПЕТЕРБУРГ",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛ.",
+        "StreetName": "БОЛЬШАЯ КОНЮШЕННАЯ",
+        "Postcode": "191186",
+        "RegionCode": "78",
+        "KladrCode": "780000000000112",
+        "GarCode": null,
+        "House": "Д. 27",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "191186, ГОРОД САНКТ-ПЕТЕРБУРГ, УЛ. БОЛЬШАЯ КОНЮШЕННАЯ, Д. 27",
+        "OnAddressCount": 4,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2012-05-22T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"СЕВЕРО-ЗАПАДНЫЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 1,
+          "Items": [
+            {
+              "Kpp": "784143001",
+              "Inn": null,
+              "RegistrationDate": "2022-09-19T00:00:00",
+              "TaxOrganCode": "7840",
+              "TaxOrganName": "Межрайонная инспекция Федеральной налоговой службы №9 по Санкт-Петербургу",
+              "IsActual": true,
+              "Date": "2022-09-19T00:00:00"
+            }
+          ]
+        },
+        "Id": "23fcc4c4-040e-4d6e-916f-45e69cd20fea",
+        "RegionType": null,
+        "RegionName": "Г.Санкт-Петербург",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛ.",
+        "StreetName": "БОЛЬШАЯ КОНЮШЕННАЯ",
+        "Postcode": "191186",
+        "RegionCode": "78",
+        "KladrCode": "780000000000112",
+        "GarCode": null,
+        "House": "Д. 27",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "191186,  Г.Санкт-Петербург, УЛ. БОЛЬШАЯ КОНЮШЕННАЯ, Д. 27",
+        "OnAddressCount": 4,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2012-05-22T00:00:00"
+      },
+      {
+        "CountryCode": null,
+        "CountryName": null,
+        "Name": "ФИЛИАЛ \"СЕВЕРО-ЗАПАДНЫЙ\" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕТЬ СВЯЗНОЙ\"",
+        "TaxRegistrations": {
+          "TotalItems": 1,
+          "Items": [
+            {
+              "Kpp": "784143001",
+              "Inn": null,
+              "RegistrationDate": "2018-10-05T00:00:00",
+              "TaxOrganCode": "7841",
+              "TaxOrganName": "Межрайонная инспекция Федеральной налоговой службы №10 по Санкт-Петербургу",
+              "IsActual": true,
+              "Date": "2019-03-28T00:00:00"
+            }
+          ]
+        },
+        "Id": "eef307f4-4d34-4758-9b0a-603656f33a7c",
+        "RegionType": "ГОРОД",
+        "RegionName": "САНКТ-ПЕТЕРБУРГ",
+        "DistrictType": null,
+        "DistrictName": null,
+        "CityType": null,
+        "CityName": null,
+        "LocalityType": null,
+        "LocalityName": null,
+        "StreetType": "УЛ.",
+        "StreetName": "БОЛЬШАЯ КОНЮШЕННАЯ",
+        "Postcode": "191186",
+        "RegionCode": "78",
+        "KladrCode": "780000000000112",
+        "GarCode": null,
+        "House": "ДОМ 27",
+        "Housing": null,
+        "Office": null,
+        "UnsplittedAddress": "191186, ГОРОД САНКТ-ПЕТЕРБУРГ, УЛ. БОЛЬШАЯ КОНЮШЕННАЯ, ДОМ 27",
+        "OnAddressCount": 4,
+        "MassRegistration": [],
+        "UnreliabilityInfo": null,
+        "AddressChangeDecision": [],
+        "IsActual": false,
+        "Date": "2012-05-22T00:00:00"
+      }
+    ]
+  },
+  "Representatives": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Predecessors": {
+    "TotalItems": 19,
+    "Items": [
+      {
+        "Entity": {
+          "Id": "d6d49665-d497-4384-b1af-14d0464986d8",
+          "Type": "Company",
+          "Name": "АО \"СВЯЗНОЙ ЛОГИСТИКА\"",
+          "Inn": "7703567318",
+          "Kpp": "772501001",
+          "Ogrn": "1057748731336",
+          "Link": "ogrn/1057748731336",
+          "Address": "115280,  Г.Москва, УЛ. ЛЕНИНСКАЯ СЛОБОДА, Д. 26, ПОМЕЩ. XII КОМНАТА 23",
+          "ActivityType": "47.42 ТОРГОВЛЯ РОЗНИЧНАЯ ТЕЛЕКОММУНИКАЦИОННЫМ ОБОРУДОВАНИЕМ, ВКЛЮЧАЯ РОЗНИЧНУЮ ТОРГОВЛЮ МОБИЛЬНЫМИ ТЕЛЕФОНАМИ, В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2019-03-29T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "66f44c5b-61be-4b46-bff5-3e9f65a0af76",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ МЕНЕДЖМЕНТ\"",
+          "Inn": "7714868490",
+          "Kpp": "771401001",
+          "Ogrn": "1127746228686",
+          "Link": "ogrn/1127746228686",
+          "Address": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ, 3, СТР.1, ЭТ.36",
+          "ActivityType": "74.15.2 ДЕЯТЕЛЬНОСТЬ ПО УПРАВЛЕНИЮ ХОЛДИНГ-КОМПАНИЯМИ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2013-08-30T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "0a6fbbbf-1179-484e-8402-ba0abfa05a32",
+          "Type": "Company",
+          "Name": "ООО \"СИГМА ТРЕЙД\"",
+          "Inn": "7722780000",
+          "Kpp": "772201001",
+          "Ogrn": "1127746504984",
+          "Link": "ogrn/1127746504984",
+          "Address": "111024, ГОРОД МОСКВА, УЛ. АВИАМОТОРНАЯ, Д.30, КВ.6",
+          "ActivityType": "52.48 ПРОЧАЯ РОЗНИЧНАЯ ТОРГОВЛЯ В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2013-08-16T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "52042dcd-f1f7-44dd-bf44-0cb541f56846",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ КАПИТАЛ\"",
+          "Inn": "7714848737",
+          "Kpp": "771401001",
+          "Ogrn": "1117746658370",
+          "Link": "ogrn/1117746658370",
+          "Address": "125284, ГОРОД МОСКВА, УЛ. БЕГОВАЯ, Д.3, СТР.1, ЭТАЖ 36",
+          "ActivityType": "65.1 ДЕНЕЖНОЕ ПОСРЕДНИЧЕСТВО",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2013-08-16T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "a8bae6aa-f984-47a6-be16-a0d0cef4bb3f",
+          "Type": "Company",
+          "Name": "ООО \"ЭЛЕКТРОСВЯЗЬ\"",
+          "Inn": "7714826780",
+          "Kpp": "771401001",
+          "Ogrn": "5107746056281",
+          "Link": "ogrn/5107746056281",
+          "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+          "ActivityType": "64.20 ДЕЯТЕЛЬНОСТЬ В ОБЛАСТИ ЭЛЕКТРОСВЯЗИ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2013-08-16T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "69258d9a-8068-43b5-b25b-885c5d46e19e",
+          "Type": "Company",
+          "Name": "ООО \"РАЗНОЦВЕТНАЯ ПЛАНЕТА\"",
+          "Inn": "7702751995",
+          "Kpp": "771401001",
+          "Ogrn": "1117746052368",
+          "Link": "ogrn/1117746052368",
+          "Address": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ, 3, СТР.1, ЭТ.36",
+          "ActivityType": "52.48.1 СПЕЦИАЛИЗИРОВАННАЯ РОЗНИЧНАЯ ТОРГОВЛЯ ОФИСНОЙ МЕБЕЛЬЮ, ОФИСНЫМ  ОБОРУДОВАНИЕМ, КОМПЬЮТЕРАМИ, ОПТИЧЕСКИМИ ПРИБОРАМИ И ФОТОАППАРАТУРОЙ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2013-08-16T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "40f98219-4c44-4e15-9971-d1f780fcbfb7",
+          "Type": "Company",
+          "Name": "ООО \"ТД \"ЕВРОСЕТЬ\"",
+          "Inn": "7706144600",
+          "Kpp": "771401001",
+          "Ogrn": "1027739648441",
+          "Link": "ogrn/1027739648441",
+          "Address": "125284, ГОРОД МОСКВА, УЛ. БЕГОВАЯ, Д.3, СТР.1, ЭТАЖ36",
+          "ActivityType": null,
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2011-12-26T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "04676cbf-4039-4bdb-a918-050c9fc64772",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ-ЛОГИСТИК\"",
+          "Inn": "7714818250",
+          "Kpp": "771401001",
+          "Ogrn": "1107746769844",
+          "Link": "ogrn/1107746769844",
+          "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+          "ActivityType": "63.1 ТРАНСПОРТНАЯ ОБРАБОТКА ГРУЗОВ И ХРАНЕНИЕ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2011-04-29T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "67ce517e-9ece-46c8-931d-4aaf47319d16",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ СПБ\"",
+          "Inn": "7838326645",
+          "Kpp": "780101001",
+          "Ogrn": "1057811028802",
+          "Link": "ogrn/1057811028802",
+          "Address": "199004, ГОРОД САНКТ-ПЕТЕРБУРГ, ПР-КТ СРЕДНИЙ, Д.36/40, ЛИТЕР. Ж",
+          "ActivityType": "51.47.34 ОПТОВАЯ ТОРГОВЛЯ ЮВЕЛИРНЫМИ ИЗДЕЛИЯМИ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2010-01-22T00:00:00"
+      },
+      {
+        "Entity": {
+          "Id": "08e8b4be-633f-4e77-99be-2f287893660f",
+          "Type": "Company",
+          "Name": "ООО \"ЕВРОСЕТЬ ЕКАТЕРИНБУРГ\"",
+          "Inn": "6670088516",
+          "Kpp": "667001001",
+          "Ogrn": "1056603583618",
+          "Link": "ogrn/1056603583618",
+          "Address": "620137, ОБЛАСТЬ СВЕРДЛОВСКАЯ, Г. ЕКАТЕРИНБУРГ, УЛ. БЛЮХЕРА, Д.32",
+          "ActivityType": "64.20 ДЕЯТЕЛЬНОСТЬ В ОБЛАСТИ ЭЛЕКТРОСВЯЗИ",
+          "Status": "Terminated"
+        },
+        "IsActual": true,
+        "Date": "2009-12-07T00:00:00"
+      }
+    ]
+  },
+  "Successors": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "PensionFundRegistrations": {
+    "TotalItems": 3,
+    "Items": [
+      {
+        "RegistrationNumber": "087216004560",
+        "RegistrationDate": "2011-06-28T00:00:00",
+        "FundOrganCode": "087216",
+        "FundOrganName": "Отделение Фонда пенсионного и социального страхования Российской Федерации по г. Москве и Московской области",
+        "IsActual": true,
+        "Date": "2011-06-29T00:00:00"
+      },
+      {
+        "RegistrationNumber": "087216004560",
+        "RegistrationDate": "2011-06-28T00:00:00",
+        "FundOrganCode": "087216",
+        "FundOrganName": "Государственное учреждение - Главное Управление Пенсионного фонда РФ №5 по г. Москве и Московской области муниципальный район Хорошевский г.Москвы",
+        "IsActual": false,
+        "Date": "2011-06-29T00:00:00"
+      },
+      {
+        "RegistrationNumber": "087216004560",
+        "RegistrationDate": "2011-06-28T00:00:00",
+        "FundOrganCode": "087216",
+        "FundOrganName": "ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ - ГЛАВНОЕ УПРАВЛЕНИЕ ПЕНСИОННОГО ФОНДА РФ №5 УПРАВЛЕНИЕ №1 МУНИЦИПАЛЬНЫЙ РАЙОН ХОРОШЕВСКИЙ Г.МОСКВЫ",
+        "IsActual": false,
+        "Date": "2011-06-29T00:00:00"
+      }
+    ]
+  },
+  "SocialInsuranceFundRegistrations": {
+    "TotalItems": 2,
+    "Items": [
+      {
+        "RegistrationNumber": "772002534977201",
+        "RegistrationDate": "2005-09-22T00:00:00",
+        "FundOrganCode": "7720",
+        "FundOrganName": "Отделение Фонда пенсионного и социального страхования Российской Федерации по г. Москве и Московской области",
+        "IsActual": true,
+        "Date": "2016-09-09T00:00:00"
+      },
+      {
+        "RegistrationNumber": "772002534977201",
+        "RegistrationDate": "2005-09-22T00:00:00",
+        "FundOrganCode": "7720",
+        "FundOrganName": "ФИЛИАЛ №20 ГОСУДАРСТВЕННОГО УЧРЕЖДЕНИЯ - МОСКОВСКОГО РЕГИОНАЛЬНОГО ОТДЕЛЕНИЯ ФОНДА СОЦИАЛЬНОГО СТРАХОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ",
+        "IsActual": false,
+        "Date": "2016-09-09T00:00:00"
+      }
+    ]
+  },
+  "TaxRegistrations": {
+    "TotalItems": 1,
+    "Items": [
+      {
+        "Kpp": "771401001",
+        "Inn": "7714617793",
+        "RegistrationDate": "2005-09-20T00:00:00",
+        "TaxOrganCode": "7714",
+        "TaxOrganName": "ИНСПЕКЦИЯ ФЕДЕРАЛЬНОЙ НАЛОГОВОЙ СЛУЖБЫ № 14 ПО Г.МОСКВЕ",
+        "IsActual": true,
+        "Date": "2009-12-18T00:00:00"
+      }
+    ]
+  },
+  "RegistrationAuthorities": {
+    "TotalItems": 2,
+    "Items": [
+      {
+        "Code": "7746",
+        "Name": "Межрайонная инспекция Федеральной налоговой службы № 46 по г. Москве",
+        "Address": "125373, г.Москва, Походный проезд, домовладение 3, стр.2",
+        "IsActual": true,
+        "Date": "2005-09-20T00:00:00"
+      },
+      {
+        "Code": "7733",
+        "Name": "МЕЖРАЙОННАЯ ИНСПЕКЦИЯ ФЕДЕРАЛЬНОЙ НАЛОГОВОЙ СЛУЖБЫ № 46 ПО Г. МОСКВЕ",
+        "Address": "125373, Г.МОСКВА, ПОХОДНЫЙ ПРОЕЗД, ДОМОВЛАДЕНИЕ 3, СТР.2",
+        "IsActual": false,
+        "Date": "2013-08-16T00:00:00"
+      }
+    ]
+  },
+  "FomsRegistrations": {
+    "TotalItems": 1,
+    "Items": [
+      {
+        "RegistrationNumber": "452140500878607",
+        "RegistrationDate": "2005-09-22T00:00:00",
+        "FundOrganCode": null,
+        "FundOrganName": null,
+        "IsActual": true,
+        "Date": null
+      }
+    ]
+  },
+  "Registrars": {
+    "TotalItems": 0,
+    "Items": []
+  },
+  "Reorganizations": {
+    "TotalItems": 2,
+    "Items": [
+      {
+        "Id": "f826d352-c781-46a8-8204-b2e420195f49",
+        "StatusCode": 132,
+        "StatusName": "Находится в процессе реорганизации в форме присоединения к нему других ЮЛ",
+        "Participants": [
+          {
+            "Id": "578e85ee-1752-47b9-af6c-8d73a62e9e21",
+            "StatusAfter": "Active",
+            "IsActual": true,
+            "Entity": {
+              "Id": "f5148e3e-4e8c-4a82-b1d1-5c7d001e9e0f",
+              "Type": "Company",
+              "Name": "ООО \"СЕТЬ СВЯЗНОЙ\"",
+              "Inn": "7714617793",
+              "Kpp": "771401001",
+              "Ogrn": "1057748288850",
+              "Link": "ogrn/1057748288850",
+              "Address": "123007,  Г.Москва, ПР-Д 2-Й ХОРОШЁВСКИЙ, Д. 9, К. 2, ЭТАЖ 5 КОМН 4",
+              "ActivityType": "47.42 ТОРГОВЛЯ РОЗНИЧНАЯ ТЕЛЕКОММУНИКАЦИОННЫМ ОБОРУДОВАНИЕМ, ВКЛЮЧАЯ РОЗНИЧНУЮ ТОРГОВЛЮ МОБИЛЬНЫМИ ТЕЛЕФОНАМИ, В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+              "Status": "InTerminationProcess"
+            }
+          },
+          {
+            "Id": "faf603f7-7ce5-4595-b379-960457731ca0",
+            "StatusAfter": "Terminated",
+            "IsActual": true,
+            "Entity": {
+              "Id": "52042dcd-f1f7-44dd-bf44-0cb541f56846",
+              "Type": "Company",
+              "Name": "ООО \"ЕВРОСЕТЬ КАПИТАЛ\"",
+              "Inn": "7714848737",
+              "Kpp": "771401001",
+              "Ogrn": "1117746658370",
+              "Link": "ogrn/1117746658370",
+              "Address": "125284, ГОРОД МОСКВА, УЛ. БЕГОВАЯ, Д.3, СТР.1, ЭТАЖ 36",
+              "ActivityType": "65.1 ДЕНЕЖНОЕ ПОСРЕДНИЧЕСТВО",
+              "Status": "Terminated"
+            }
+          },
+          {
+            "Id": "3efd9833-e7f6-44f2-b68b-6a96f50085cc",
+            "StatusAfter": "Terminated",
+            "IsActual": true,
+            "Entity": {
+              "Id": "69258d9a-8068-43b5-b25b-885c5d46e19e",
+              "Type": "Company",
+              "Name": "ООО \"РАЗНОЦВЕТНАЯ ПЛАНЕТА\"",
+              "Inn": "7702751995",
+              "Kpp": "771401001",
+              "Ogrn": "1117746052368",
+              "Link": "ogrn/1117746052368",
+              "Address": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ, 3, СТР.1, ЭТ.36",
+              "ActivityType": "52.48.1 СПЕЦИАЛИЗИРОВАННАЯ РОЗНИЧНАЯ ТОРГОВЛЯ ОФИСНОЙ МЕБЕЛЬЮ, ОФИСНЫМ  ОБОРУДОВАНИЕМ, КОМПЬЮТЕРАМИ, ОПТИЧЕСКИМИ ПРИБОРАМИ И ФОТОАППАРАТУРОЙ",
+              "Status": "Terminated"
+            }
+          },
+          {
+            "Id": "97cea59c-a881-4a70-96df-2a570c2f1e1a",
+            "StatusAfter": "Terminated",
+            "IsActual": true,
+            "Entity": {
+              "Id": "a8bae6aa-f984-47a6-be16-a0d0cef4bb3f",
+              "Type": "Company",
+              "Name": "ООО \"ЭЛЕКТРОСВЯЗЬ\"",
+              "Inn": "7714826780",
+              "Kpp": "771401001",
+              "Ogrn": "5107746056281",
+              "Link": "ogrn/5107746056281",
+              "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+              "ActivityType": "64.20 ДЕЯТЕЛЬНОСТЬ В ОБЛАСТИ ЭЛЕКТРОСВЯЗИ",
+              "Status": "Terminated"
+            }
+          },
+          {
+            "Id": "e855b9aa-b80d-4e7b-b2e9-4eb833812e6f",
+            "StatusAfter": "Terminated",
+            "IsActual": true,
+            "Entity": {
+              "Id": "0a6fbbbf-1179-484e-8402-ba0abfa05a32",
+              "Type": "Company",
+              "Name": "ООО \"СИГМА ТРЕЙД\"",
+              "Inn": "7722780000",
+              "Kpp": "772201001",
+              "Ogrn": "1127746504984",
+              "Link": "ogrn/1127746504984",
+              "Address": "111024, ГОРОД МОСКВА, УЛ. АВИАМОТОРНАЯ, Д.30, КВ.6",
+              "ActivityType": "52.48 ПРОЧАЯ РОЗНИЧНАЯ ТОРГОВЛЯ В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+              "Status": "Terminated"
+            }
+          },
+          {
+            "Id": "d2fff360-725f-4d83-9f74-de8a4c3af535",
+            "StatusAfter": "Terminated",
+            "IsActual": false,
+            "Entity": {
+              "Id": "d6d49665-d497-4384-b1af-14d0464986d8",
+              "Type": "Company",
+              "Name": "АО \"СВЯЗНОЙ ЛОГИСТИКА\"",
+              "Inn": "7703567318",
+              "Kpp": "772501001",
+              "Ogrn": "1057748731336",
+              "Link": "ogrn/1057748731336",
+              "Address": "115280,  Г.Москва, УЛ. ЛЕНИНСКАЯ СЛОБОДА, Д. 26, ПОМЕЩ. XII КОМНАТА 23",
+              "ActivityType": "47.42 ТОРГОВЛЯ РОЗНИЧНАЯ ТЕЛЕКОММУНИКАЦИОННЫМ ОБОРУДОВАНИЕМ, ВКЛЮЧАЯ РОЗНИЧНУЮ ТОРГОВЛЮ МОБИЛЬНЫМИ ТЕЛЕФОНАМИ, В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+              "Status": "Terminated"
+            }
+          }
+        ],
+        "IsActual": false,
+        "Date": "2018-11-06T00:00:00"
+      },
+      {
+        "Id": "db9ab58d-1cab-4b59-8c14-4323b5cc0702",
+        "StatusCode": 132,
+        "StatusName": "ЮРИДИЧЕСКОЕ ЛИЦО НАХОДИТСЯ В ПРОЦЕССЕ РЕОРГАНИЗАЦИИ В ФОРМЕ ПРИСОЕДИНЕНИЯ К НЕМУ ДРУГИХ ЮРИДИЧЕСКИХ ЛИЦ",
+        "Participants": [
+          {
+            "Id": "f629b5ca-c1bc-4a84-b6a3-9eb7ff78d477",
+            "StatusAfter": "Active",
+            "IsActual": true,
+            "Entity": {
+              "Id": "f5148e3e-4e8c-4a82-b1d1-5c7d001e9e0f",
+              "Type": "Company",
+              "Name": "ООО \"СЕТЬ СВЯЗНОЙ\"",
+              "Inn": "7714617793",
+              "Kpp": "771401001",
+              "Ogrn": "1057748288850",
+              "Link": "ogrn/1057748288850",
+              "Address": "123007,  Г.Москва, ПР-Д 2-Й ХОРОШЁВСКИЙ, Д. 9, К. 2, ЭТАЖ 5 КОМН 4",
+              "ActivityType": "47.42 ТОРГОВЛЯ РОЗНИЧНАЯ ТЕЛЕКОММУНИКАЦИОННЫМ ОБОРУДОВАНИЕМ, ВКЛЮЧАЯ РОЗНИЧНУЮ ТОРГОВЛЮ МОБИЛЬНЫМИ ТЕЛЕФОНАМИ, В СПЕЦИАЛИЗИРОВАННЫХ МАГАЗИНАХ",
+              "Status": "InTerminationProcess"
+            }
+          },
+          {
+            "Id": "8ae90e96-e577-4456-9a20-c69ecfea2979",
+            "StatusAfter": "Terminated",
+            "IsActual": true,
+            "Entity": {
+              "Id": "52042dcd-f1f7-44dd-bf44-0cb541f56846",
+              "Type": "Company",
+              "Name": "ООО \"ЕВРОСЕТЬ КАПИТАЛ\"",
+              "Inn": "7714848737",
+              "Kpp": "771401001",
+              "Ogrn": "1117746658370",
+              "Link": "ogrn/1117746658370",
+              "Address": "125284, ГОРОД МОСКВА, УЛ. БЕГОВАЯ, Д.3, СТР.1, ЭТАЖ 36",
+              "ActivityType": "65.1 ДЕНЕЖНОЕ ПОСРЕДНИЧЕСТВО",
+              "Status": "Terminated"
+            }
+          },
+          {
+            "Id": "58328507-7ed0-4998-ba9f-8085a4918371",
+            "StatusAfter": "Terminated",
+            "IsActual": true,
+            "Entity": {
+              "Id": "69258d9a-8068-43b5-b25b-885c5d46e19e",
+              "Type": "Company",
+              "Name": "ООО \"РАЗНОЦВЕТНАЯ ПЛАНЕТА\"",
+              "Inn": "7702751995",
+              "Kpp": "771401001",
+              "Ogrn": "1117746052368",
+              "Link": "ogrn/1117746052368",
+              "Address": "125284, ГОРОД МОСКВА, УЛИЦА БЕГОВАЯ, 3, СТР.1, ЭТ.36",
+              "ActivityType": "52.48.1 СПЕЦИАЛИЗИРОВАННАЯ РОЗНИЧНАЯ ТОРГОВЛЯ ОФИСНОЙ МЕБЕЛЬЮ, ОФИСНЫМ  ОБОРУДОВАНИЕМ, КОМПЬЮТЕРАМИ, ОПТИЧЕСКИМИ ПРИБОРАМИ И ФОТОАППАРАТУРОЙ",
+              "Status": "Terminated"
+            }
+          },
+          {
+            "Id": "f497a2ea-5b18-4f15-b0e1-ec0373f71cbc",
+            "StatusAfter": "Terminated",
+            "IsActual": true,
+            "Entity": {
+              "Id": "a8bae6aa-f984-47a6-be16-a0d0cef4bb3f",
+              "Type": "Company",
+              "Name": "ООО \"ЭЛЕКТРОСВЯЗЬ\"",
+              "Inn": "7714826780",
+              "Kpp": "771401001",
+              "Ogrn": "5107746056281",
+              "Link": "ogrn/5107746056281",
+              "Address": "127015, ГОРОД МОСКВА, ПР-Д БУМАЖНЫЙ, Д.14, СТР.2",
+              "ActivityType": "64.20 ДЕЯТЕЛЬНОСТЬ В ОБЛАСТИ ЭЛЕКТРОСВЯЗИ",
+              "Status": "Terminated"
+            }
+          }
+        ],
+        "IsActual": false,
+        "Date": "2013-05-31T00:00:00"
+      }
+    ]
+  },
+  "Id": "f5148e3e-4e8c-4a82-b1d1-5c7d001e9e0f",
+  "InfoCounters": {
+    "Status": 4,
+    "AuthorisedCapital": 2,
+    "Name": 3,
+    "ActivityTypeInfo": 57,
+    "Address": 9,
+    "ManagementCompany": 1,
+    "AsManagementCompany": 7,
+    "Shareholder": 23,
+    "AsShareholder": 9,
+    "Manager": 9,
+    "AsManager": -1,
+    "Branch": 56,
+    "License": 11,
+    "Predecessor": 19,
+    "Successor": -1,
+    "RepresentativeOffice": -1,
+    "Registrar": -1,
+    "AsRegistrar": -1,
+    "ReorganizationInfo": 2,
+    "LlcShare": -1,
+    "AsEntrepreneur": -1,
+    "Bailiffs": 20953,
+    "Arbitr": 3588,
+    "FedresursMessages": 13,
+    "Trademark": -1,
+    "IssuersMessages": -1,
+    "BankruptMessages": -1,
+    "Contracts": 106,
+    "EgrulListsDebtors": -1,
+    "EgrulListsDisqPersons": -1,
+    "EgrulListsEntitiesWithDisqPersons": -1,
+    "EgrulListsUnreported": -1,
+    "EgrulListsMassFounder": -1,
+    "EgrulListsMassManager": -1,
+    "Finance": 14,
+    "Inspections": 1671,
+    "Contacts": 64,
+    "FedresursPledge": -1,
+    "Subsidies": -1,
+    "MassMedia": 7,
+    "Vacancies": 134444,
+    "Accreditation": 50,
+    "BanksInfo": -1,
+    "Auditors": 1,
+    "Insurance": -1,
+    "ExporterProducts": -1,
+    "WoodDeals": -1,
+    "WoodRents": -1,
+    "CustomsWarehouses": -1,
+    "FnsDocuments": 7,
+    "Receipts": 412,
+    "Patents": 87,
+    "Vehicles": 11,
+    "WaterObjects": -1,
+    "FipsApplications": 12,
+    "FipsPatents": 75,
+    "GeneralJurisdictionCourts": 1397
+  }
+}

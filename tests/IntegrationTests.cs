@@ -1,5 +1,6 @@
 using Grpc.Core;
 using LegalEntityChecker;
+using WireMock.RequestBuilders;
 
 namespace LegalEntities.Tests;
 
@@ -23,20 +24,25 @@ public class LegalEntitiesInfoService
 
         // Assert
         actual.Should().BeNull();
-        server.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(1);
-        server.FindLogEntries(TestHelpers.GetCompanyRequest()).Count().Should().Be(0);
+        server.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(2);
+        server.FindLogEntries(TestHelpers.GetYandexBasicInfoRequest()).Count().Should().Be(0);
+        server.FindLogEntries(TestHelpers.GetYandexProceedingsInfoRequest()).Count().Should().Be(0);
         await postgres.DisposeAsync().AsTask();
     }
 
-    [TestMethod]
-    public async Task RequestOfExistingCompanyWorksOk()
+    [DataTestMethod]
+    [DynamicData(nameof(LegalEntitiesInfos))]
+    public async Task RequestOfExistingCompanyWorksOk(
+        LegalEntityInfoReponse expected,
+        IRequestBuilder basicInfoRequest,
+        IRequestBuilder proceedingsInfoRequest)
     {
         // Arrange
         var postgres = TestHelpers.GetPostgres();
         await postgres.StartAsync();
         var repository = postgres.GetRepository();
         var (server, api) = TestHelpers.GetReputationApi(repository);
-        var tin = 7704414297;
+        var tin = expected.Tin;
         var request = new LegalEntityInfoRequest() { Tin = tin };
         var sut = new LegalEntityChecker(api);
 
@@ -44,14 +50,19 @@ public class LegalEntitiesInfoService
         var actual = await sut.Get(request, Mock.Of<ServerCallContext>());
 
         // Assert
-        actual.Should().Be(TestHelpers.ExpectedLegalEntityInfoReponse);
-        server.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(1);
-        server.FindLogEntries(TestHelpers.GetCompanyRequest()).Count().Should().Be(1);
+        actual.Should().Be(expected);
+        server.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(2);
+        server.FindLogEntries(basicInfoRequest).Count().Should().Be(1);
+        server.FindLogEntries(proceedingsInfoRequest).Count().Should().Be(1);
         await postgres.DisposeAsync().AsTask();
     }
 
-    [TestMethod]
-    public async Task RequestOfExistingCompanyAfterRebootWorksOk()
+    [DataTestMethod]
+    [DynamicData(nameof(LegalEntitiesInfos))]
+    public async Task RequestOfExistingCompanyAfterRebootWorksOk(
+        LegalEntityInfoReponse expected,
+        IRequestBuilder basicInfoRequest,
+        IRequestBuilder proceedingsInfoRequest)
     {
         // Arrange
         var postgres = TestHelpers.GetPostgres();
@@ -59,7 +70,7 @@ public class LegalEntitiesInfoService
         var repository = postgres.GetRepository();
         var (serverBefore, apiBefore) = TestHelpers.GetReputationApi(repository);
         var (serverAfter, apiAfter) = TestHelpers.GetReputationApi(repository);
-        var tin = 7704414297;
+        var tin = expected.Tin;
         var request = new LegalEntityInfoRequest() { Tin = tin };
         var sutBefore = new LegalEntityChecker(apiBefore);
         var actualBefore = await sutBefore.Get(request, Mock.Of<ServerCallContext>());
@@ -69,24 +80,30 @@ public class LegalEntitiesInfoService
         var actualAfter = await sutAfter.Get(request, Mock.Of<ServerCallContext>());
 
         // Assert
-        actualBefore.Should().Be(TestHelpers.ExpectedLegalEntityInfoReponse);
-        actualAfter.Should().Be(TestHelpers.ExpectedLegalEntityInfoReponse);
-        serverBefore.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(1);
-        serverBefore.FindLogEntries(TestHelpers.GetCompanyRequest()).Count().Should().Be(1);
+        actualBefore.Should().Be(expected);
+        actualAfter.Should().Be(expected);
+        serverBefore.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(2);
+        serverBefore.FindLogEntries(basicInfoRequest).Count().Should().Be(1);
+        serverBefore.FindLogEntries(proceedingsInfoRequest).Count().Should().Be(1);
         serverAfter.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(0);
-        serverAfter.FindLogEntries(TestHelpers.GetCompanyRequest()).Count().Should().Be(0);
+        serverAfter.FindLogEntries(basicInfoRequest).Count().Should().Be(0);
+        serverAfter.FindLogEntries(proceedingsInfoRequest).Count().Should().Be(0);
         await postgres.DisposeAsync().AsTask();
     }
 
-    [TestMethod]
-    public async Task MultipleApiCallsCausesCachingInDatabase()
+    [DataTestMethod]
+    [DynamicData(nameof(LegalEntitiesInfos))]
+    public async Task MultipleApiCallsCausesCachingInDatabase(
+        LegalEntityInfoReponse expected,
+        IRequestBuilder basicInfoRequest,
+        IRequestBuilder proceedingsInfoRequest)
     {
         // Arrange
         var postgres = TestHelpers.GetPostgres();
         await postgres.StartAsync();
         var repository = postgres.GetRepository();
         var (server, api) = TestHelpers.GetReputationApi(repository);
-        var tin = 7704414297;
+        var tin = expected.Tin;
         var request = new LegalEntityInfoRequest() { Tin = tin };
         var sut = new LegalEntityChecker(api);
 
@@ -97,14 +114,29 @@ public class LegalEntitiesInfoService
         var actual4 = await sut.Get(request, Mock.Of<ServerCallContext>());
 
         // Assert
-        actual1.Should().Be(TestHelpers.ExpectedLegalEntityInfoReponse);
-        actual2.Should().Be(TestHelpers.ExpectedLegalEntityInfoReponse);
-        actual3.Should().Be(TestHelpers.ExpectedLegalEntityInfoReponse);
-        actual4.Should().Be(TestHelpers.ExpectedLegalEntityInfoReponse);
+        actual1.Should().Be(expected);
+        actual2.Should().Be(expected);
+        actual3.Should().Be(expected);
+        actual4.Should().Be(expected);
 
         // Only one call to API due to caching
-        server.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(1);
-        server.FindLogEntries(TestHelpers.GetCompanyRequest()).Count().Should().Be(1);
+        server.FindLogEntries(TestHelpers.GetIdRequest($"{tin}")).Count().Should().Be(2);
+        server.FindLogEntries(basicInfoRequest).Count().Should().Be(1);
+        server.FindLogEntries(proceedingsInfoRequest).Count().Should().Be(1);
         await postgres.DisposeAsync().AsTask();
     }
+
+    public static IEnumerable<object[]> LegalEntitiesInfos =>
+    [
+        [
+            TestHelpers.YandexInfo,
+            TestHelpers.GetYandexBasicInfoRequest(),
+            TestHelpers.GetYandexProceedingsInfoRequest()
+        ],
+        [
+            TestHelpers.SvyaznoyInfo,
+            TestHelpers.GetSvyaznoyBasicInfoRequest(),
+            TestHelpers.GetSvyaznoyProceedingsInfoRequest()
+        ]
+    ];
 }

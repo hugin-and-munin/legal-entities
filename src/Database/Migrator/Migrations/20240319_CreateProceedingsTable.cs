@@ -2,12 +2,12 @@ using FluentMigrator;
 
 namespace LegalEntities.Database.Migrator.Migrations;
 
-[Migration(20240201, "Creates LegalEntities table")]
-public class CreateLegalEntitiesTable : Migration
+[Migration(20240319, "Creates Proceedings table")]
+public class CreateProceedingsTable : Migration
 {
     public override void Up()
     {
-        Create.Table("LegalEntities")
+        Create.Table("Proceedings")
             .WithColumn("Tin").AsInt64().PrimaryKey()
             .WithColumn("Json").AsString()
             .WithColumn("ReceivedAt").AsDateTimeOffset();
@@ -15,6 +15,6 @@ public class CreateLegalEntitiesTable : Migration
 
     public override void Down()
     {
-        Delete.Table("LegalEntities");
+        Delete.Table("Proceedings");
     }
 }

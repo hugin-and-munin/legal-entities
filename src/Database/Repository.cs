@@ -8,26 +8,45 @@ namespace LegalEntities.Database;
 public class Repository(IOptions<AppOptions> _options) : IRepository
 {
     private readonly NpgsqlConnection connection = new(_options.Value.DbConnectionString);
-    private readonly string _selectQuery =
-        @"SELECT ""Tin"", ""Json"", ""ReceivedAt""
-        FROM ""LegalEntities"" WHERE ""Tin"" = @Tin";
-        
-    private readonly string _upsertQuery = 
-        @"INSERT INTO ""LegalEntities"" (""Tin"", ""Json"", ""ReceivedAt"") 
-        VALUES (@Tin, @Json, @ReceivedAt)
-        ON CONFLICT (""Tin"") 
-        DO UPDATE SET 
-        ""Json"" = EXCLUDED.""Json"", 
-        ""ReceivedAt"" = EXCLUDED.""ReceivedAt""";
 
-    public async Task<ReputationApiResponse?> GetReputationResponse(long tin, CancellationToken ct)
+    public async Task<ReputationApiResponse?> GetProceedingsInfo(long tin, CancellationToken ct)
     {
-        return await connection.QueryFirstOrDefaultAsync<ReputationApiResponse>(_selectQuery, new { Tin = tin });
+        var sql = 
+            @"SELECT ""Tin"", ""Json"", ""ReceivedAt""
+            FROM ""Proceedings"" WHERE ""Tin"" = @Tin";
+        return await connection.QueryFirstOrDefaultAsync<ReputationApiResponse>(sql, new { Tin = tin });
     }
 
-    public async Task UpsertReputationResponse(ReputationApiResponse response, CancellationToken ct)
+    public async Task<ReputationApiResponse?> GetBasicInfo(long tin, CancellationToken ct)
     {
-        await connection.ExecuteAsync(_upsertQuery, response);
+        var sql = 
+            @"SELECT ""Tin"", ""Json"", ""ReceivedAt""
+            FROM ""LegalEntities"" WHERE ""Tin"" = @Tin";
+        return await connection.QueryFirstOrDefaultAsync<ReputationApiResponse>(sql, new { Tin = tin });
+    }
+
+    public async Task UpsertProceedingsInfo(ReputationApiResponse response, CancellationToken ct)
+    {
+        var sql = 
+            @"INSERT INTO ""Proceedings"" (""Tin"", ""Json"", ""ReceivedAt"") 
+            VALUES (@Tin, @Json, @ReceivedAt)
+            ON CONFLICT (""Tin"") 
+            DO UPDATE SET 
+            ""Json"" = EXCLUDED.""Json"", 
+            ""ReceivedAt"" = EXCLUDED.""ReceivedAt""";
+        await connection.ExecuteAsync(sql, response);
+    }
+
+    public async Task UpsertBasicInfo(ReputationApiResponse response, CancellationToken ct)
+    {
+        var sql = 
+            @"INSERT INTO ""LegalEntities"" (""Tin"", ""Json"", ""ReceivedAt"") 
+            VALUES (@Tin, @Json, @ReceivedAt)
+            ON CONFLICT (""Tin"") 
+            DO UPDATE SET 
+            ""Json"" = EXCLUDED.""Json"", 
+            ""ReceivedAt"" = EXCLUDED.""ReceivedAt""";
+        await connection.ExecuteAsync(sql, response);
     }
 }
 

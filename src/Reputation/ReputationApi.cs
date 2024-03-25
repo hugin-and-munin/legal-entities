@@ -10,25 +10,117 @@ public class ReputationApi : IReputationApi
 {
     private readonly ReputationApiClient _reputationApiClient;
     private readonly IRepository _repository;
+    private readonly ILogger<IReputationApi> _logger;
 
-    public ReputationApi(IOptions<AppOptions> options, HttpClient client, IRepository repository)
+    public ReputationApi(
+        IOptions<AppOptions> options,
+        HttpClient client,
+        IRepository repository,
+        ILogger<IReputationApi> logger)
     {
         client.DefaultRequestHeaders.Add("Authorization", options.Value.ApiKey);
         _reputationApiClient = new ReputationApiClient(options.Value.ApiBase, client);
         _repository = repository;
+        _logger = logger;
     }
 
-    public async Task<LegalEntityInfoReponse?> Get(LegalEntityInfoRequest request, CancellationToken ct)
+    public async Task<BasicInfo?> GetBasicInfo(
+            LegalEntityInfoRequest request,
+            CancellationToken ct)
     {
         var companyInfo = await GetCompanyInfo(request.Tin, ct);
         var proceedingsInfo = await GetProceedingsInfo(request.Tin, ct);
 
-        if (companyInfo is null) return null;
+        if (companyInfo is null || proceedingsInfo is null)
+        {
+            return null;
+        }
 
+        return GetBasicInfo(companyInfo, proceedingsInfo);
+    }
+
+    public async Task<ExtendedInfo?> GetExtendedInfo(
+        LegalEntityInfoRequest request,
+        CancellationToken ct)
+    {
+        var companyInfo = await GetCompanyInfo(request.Tin, ct);
+        var proceedingsInfo = await GetProceedingsInfo(request.Tin, ct);
+
+        if (companyInfo is null || proceedingsInfo is null)
+        {
+            return null;
+        }
+
+        var result = new ExtendedInfo();
+
+        var basicInfo = GetBasicInfo(companyInfo, proceedingsInfo);
+
+        var managerDto = companyInfo.Managers.Items
+            .FirstOrDefault(x => x.IsActual.HasValue && x.IsActual.Value);
+
+        Manager manager = new();
+
+        if (managerDto is not null)
+        {
+            var managerName = managerDto.Entity.Name ?? string.Empty;
+            if (!long.TryParse(managerDto.Entity.Inn, out var managerTin)) managerTin = -1;
+            var managerPosition = managerDto.Position
+                .FirstOrDefault(x => x.IsActual.HasValue && x.IsActual.Value)?.PositionName ?? string.Empty;
+
+            manager.Name = managerName;
+            manager.Tin = managerTin;
+            manager.Position = managerPosition;
+        }
+
+        var shareholdersDtos = companyInfo.Shareholders.Items
+            .Where(x => x.IsActual.HasValue && x.IsActual.Value)
+            // For some reason Reputation API sometimes returns duplicates
+            // That's why we use Distinct here
+            .DistinctBy(x => x.Entity.Name);
+
+        var shareholders = new List<Shareholder>();
+
+        foreach (var shareholderDto in shareholdersDtos)
+        {
+            var shareholderName = shareholderDto.Entity.Name ?? string.Empty;
+            if (!long.TryParse(shareholderDto.Entity.Inn, out var shareholderTin)) shareholderTin = -1;
+            var shareValue = shareholderDto.Share.FirstOrDefault(x => x.IsActual.HasValue && x.IsActual.Value);
+            var shareholderShare = shareValue?.FaceValue ?? -1.0;
+            var shareholderSize = shareValue?.Size ?? -1.0;
+            var shareholderType = shareholderDto.Entity.Type switch
+            {
+                EntityType_DA_Entities.Company => EntityType.Company,
+                EntityType_DA_Entities.Person => EntityType.Person,
+                EntityType_DA_Entities.ForeignCompany => EntityType.ForeignCompany,
+                EntityType_DA_Entities.Entrepreneur => EntityType.Entrepreneur,
+                EntityType_DA_Entities.MunicipalSubject => EntityType.MunicipalSubject,
+                _ => throw new NotImplementedException(),
+            };
+            var shareholder = new Shareholder()
+            {
+                Name = shareholderName,
+                Tin = shareholderTin,
+                Share = shareholderShare,
+                Size = shareholderSize,
+                Type = shareholderType
+            };
+            shareholders.Add(shareholder);
+        }
+
+        result.BasicInfo = basicInfo;
+        result.Manager = manager;
+        result.Shareholders.AddRange(shareholders);
+
+        return result;
+    }
+    private static BasicInfo GetBasicInfo(
+        Company_DA_Entities companyInfo,
+        ProceedingsInfo proceedingsInfo)
+    {
         // Короткое имя компании
         var name = companyInfo.Names.Items.FirstOrDefault()?.ShortName ?? string.Empty;
         // ИНН
-        var tin = long.TryParse(companyInfo.Inn, out var cached) ? cached : -1;
+        if (!long.TryParse(companyInfo.Inn, out var tin)) tin = -1;
         // Дата регистрации
         var incorporationDate = companyInfo.RegistrationDate?.ToUnixTimeSeconds() ?? -1;
         // Уставной капитал
@@ -49,24 +141,26 @@ public class ReputationApi : IReputationApi
         };
 
         // Сведения о невыплате зарплаты
-        bool salaryDelays = false;
+        Proceeding proceeding = new();
 
-        if (proceedingsInfo != null && 
-            proceedingsInfo.Aggregations.TryGetValue("ExecutionObject", out var executions))
+        if (proceedingsInfo.Aggregations.TryGetValue("ExecutionObject", out var executionsDtos))
         {
-            foreach (var e in executions)
-            {
-                if (string.Equals(
-                    e.Name,
+            var proceedigDto = executionsDtos.FirstOrDefault(x =>
+                string.Equals(
+                    x.Name,
                     "Оплата труда и иные выплаты по трудовым правоотношениям",
-                    StringComparison.OrdinalIgnoreCase))
-                {
-                    salaryDelays = true;
-                }
+                    StringComparison.OrdinalIgnoreCase));
+
+            if (proceedigDto is not null)
+            {
+                proceeding.Amount = proceedigDto.Sum ?? -1;
+                proceeding.Count = proceedigDto.Count ?? -1;
+                proceeding.Description = proceedigDto.Name;
             }
+
         }
 
-        return new LegalEntityInfoReponse()
+        return new()
         {
             Name = name,
             Tin = tin,
@@ -75,32 +169,7 @@ public class ReputationApi : IReputationApi
             EmployeesNumber = employeesNumber,
             Address = address,
             LegalEntityStatus = status,
-            SalaryDelays = salaryDelays
-        };
-    }
-
-    public async Task<LegalEntityExtendedInfoResponse?> GetExtendedInfo(LegalEntityExtendedInfoRequest request, CancellationToken ct)
-    {
-        var companyInfo = await GetCompanyInfo(request.Tin, ct);
-        if (companyInfo is null) return null;
-
-        return new LegalEntityExtendedInfoResponse()
-        {
-            Name = companyInfo.Names.Items.FirstOrDefault()?.ShortName ?? string.Empty,
-            Tin = Convert.ToInt64(companyInfo.Inn),
-            IncorporationDate = companyInfo.RegistrationDate?.ToUnixTimeSeconds() ?? -1,
-            AuthorizedCapital = Convert.ToInt32(companyInfo.AuthorizedCapitals.Items.FirstOrDefault()?.Sum ?? -1),
-            EmployeesNumber = companyInfo.EmployeesInfo.Items.FirstOrDefault()?.Count ?? -1,
-            Address = companyInfo.Addresses.Items.FirstOrDefault()?.UnsplittedAddress ?? string.Empty,
-            LegalEntityStatus = companyInfo.Status.Status switch
-            {
-                Status_DA_Entities.Active => LegalEntityStatus.Active,
-                Status_DA_Entities.Bankruptcy => LegalEntityStatus.Bankruptcy,
-                Status_DA_Entities.InReorganizationProcess => LegalEntityStatus.InReorganizationProcess,
-                Status_DA_Entities.InTerminationProcess => LegalEntityStatus.InTerminationProcess,
-                Status_DA_Entities.Terminated => LegalEntityStatus.Terminated,
-                _ => throw new NotImplementedException(),
-            }
+            Proceedings = proceeding
         };
     }
 
@@ -118,7 +187,11 @@ public class ReputationApi : IReputationApi
 
         // Otherwise slow path -> call to API
         var entitiesResponse = await _reputationApiClient.EntitiesIdAsync(null, $"{tin}", null, ct);
-        if (entitiesResponse.Items.Count == 0) return null;
+        if (entitiesResponse.Items.Count == 0)
+        {
+            _logger.LogWarning("Failed to get company info for {tin}", tin);
+            return null;
+        }
 
         var entity = entitiesResponse.Items.First();
         Company_DA_Entities companyInfo = await _reputationApiClient.EntitiesCompanyAsync(entity.Id, null, ct);
@@ -149,7 +222,11 @@ public class ReputationApi : IReputationApi
 
         // Otherwise slow path -> call to API
         var entitiesResponse = await _reputationApiClient.EntitiesIdAsync(null, $"{tin}", null, ct);
-        if (entitiesResponse.Items.Count == 0) return null;
+        if (entitiesResponse.Items.Count == 0)
+        {
+            _logger.LogWarning("Failed to get proceedings info for {tin}", tin);
+            return null;
+        }
 
         var entity = entitiesResponse.Items.First();
         ProceedingsInfo proceedingsInfo = await _reputationApiClient.FsspProceedingsAsync(

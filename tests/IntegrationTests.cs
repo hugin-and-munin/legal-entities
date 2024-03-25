@@ -17,10 +17,11 @@ public class LegalEntitiesInfoService
         var (server, api) = TestHelpers.GetReputationApi(repository);
         var tin = 123; // unknown tin
         var request = new LegalEntityInfoRequest() { Tin = tin };
-        var sut = new LegalEntityChecker(api);
+        var memoryCache = TestHelpers.GetMemoryCache();
+        var sut = new LegalEntityChecker(api, memoryCache);
 
         // Act
-        var actual = await sut.Get(request, Mock.Of<ServerCallContext>());
+        var actual = await sut.GetBasicInfo(request, Mock.Of<ServerCallContext>());
 
         // Assert
         actual.Should().BeNull();
@@ -33,7 +34,7 @@ public class LegalEntitiesInfoService
     [DataTestMethod]
     [DynamicData(nameof(LegalEntitiesInfos))]
     public async Task RequestOfExistingCompanyWorksOk(
-        LegalEntityInfoReponse expected,
+        BasicInfo expected,
         IRequestBuilder basicInfoRequest,
         IRequestBuilder proceedingsInfoRequest)
     {
@@ -44,10 +45,11 @@ public class LegalEntitiesInfoService
         var (server, api) = TestHelpers.GetReputationApi(repository);
         var tin = expected.Tin;
         var request = new LegalEntityInfoRequest() { Tin = tin };
-        var sut = new LegalEntityChecker(api);
+        var memoryCache = TestHelpers.GetMemoryCache();
+        var sut = new LegalEntityChecker(api, memoryCache);
 
         // Act
-        var actual = await sut.Get(request, Mock.Of<ServerCallContext>());
+        var actual = await sut.GetBasicInfo(request, Mock.Of<ServerCallContext>());
 
         // Assert
         actual.Should().Be(expected);
@@ -60,7 +62,7 @@ public class LegalEntitiesInfoService
     [DataTestMethod]
     [DynamicData(nameof(LegalEntitiesInfos))]
     public async Task RequestOfExistingCompanyAfterRebootWorksOk(
-        LegalEntityInfoReponse expected,
+        BasicInfo expected,
         IRequestBuilder basicInfoRequest,
         IRequestBuilder proceedingsInfoRequest)
     {
@@ -72,12 +74,14 @@ public class LegalEntitiesInfoService
         var (serverAfter, apiAfter) = TestHelpers.GetReputationApi(repository);
         var tin = expected.Tin;
         var request = new LegalEntityInfoRequest() { Tin = tin };
-        var sutBefore = new LegalEntityChecker(apiBefore);
-        var actualBefore = await sutBefore.Get(request, Mock.Of<ServerCallContext>());
-        var sutAfter = new LegalEntityChecker(apiAfter); // new instance to simulate reboot
+        var memoryCacheBefore = TestHelpers.GetMemoryCache();
+        var sutBefore = new LegalEntityChecker(apiBefore, memoryCacheBefore);
+        var actualBefore = await sutBefore.GetBasicInfo(request, Mock.Of<ServerCallContext>());
+        var memoryCacheAfter = TestHelpers.GetMemoryCache();
+        var sutAfter = new LegalEntityChecker(apiAfter, memoryCacheAfter); // new instance to simulate reboot
 
         // Act
-        var actualAfter = await sutAfter.Get(request, Mock.Of<ServerCallContext>());
+        var actualAfter = await sutAfter.GetBasicInfo(request, Mock.Of<ServerCallContext>());
 
         // Assert
         actualBefore.Should().Be(expected);
@@ -94,7 +98,7 @@ public class LegalEntitiesInfoService
     [DataTestMethod]
     [DynamicData(nameof(LegalEntitiesInfos))]
     public async Task MultipleApiCallsCausesCachingInDatabase(
-        LegalEntityInfoReponse expected,
+        BasicInfo expected,
         IRequestBuilder basicInfoRequest,
         IRequestBuilder proceedingsInfoRequest)
     {
@@ -105,13 +109,14 @@ public class LegalEntitiesInfoService
         var (server, api) = TestHelpers.GetReputationApi(repository);
         var tin = expected.Tin;
         var request = new LegalEntityInfoRequest() { Tin = tin };
-        var sut = new LegalEntityChecker(api);
+        var memoryCache = TestHelpers.GetMemoryCache();
+        var sut = new LegalEntityChecker(api, memoryCache);
 
         // Act
-        var actual1 = await sut.Get(request, Mock.Of<ServerCallContext>());
-        var actual2 = await sut.Get(request, Mock.Of<ServerCallContext>());
-        var actual3 = await sut.Get(request, Mock.Of<ServerCallContext>());
-        var actual4 = await sut.Get(request, Mock.Of<ServerCallContext>());
+        var actual1 = await sut.GetBasicInfo(request, Mock.Of<ServerCallContext>());
+        var actual2 = await sut.GetBasicInfo(request, Mock.Of<ServerCallContext>());
+        var actual3 = await sut.GetBasicInfo(request, Mock.Of<ServerCallContext>());
+        var actual4 = await sut.GetBasicInfo(request, Mock.Of<ServerCallContext>());
 
         // Assert
         actual1.Should().Be(expected);
@@ -129,12 +134,12 @@ public class LegalEntitiesInfoService
     public static IEnumerable<object[]> LegalEntitiesInfos =>
     [
         [
-            TestHelpers.YandexInfo,
+            TestHelpers.YandexBasicInfo,
             TestHelpers.GetYandexBasicInfoRequest(),
             TestHelpers.GetYandexProceedingsInfoRequest()
         ],
         [
-            TestHelpers.SvyaznoyInfo,
+            TestHelpers.SvyaznoyBasicInfo,
             TestHelpers.GetSvyaznoyBasicInfoRequest(),
             TestHelpers.GetSvyaznoyProceedingsInfoRequest()
         ]

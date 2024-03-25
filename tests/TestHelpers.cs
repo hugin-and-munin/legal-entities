@@ -2,6 +2,9 @@ using LegalEntities.Database;
 using LegalEntities.Database.Migrator;
 using LegalEntities.Reputation;
 using LegalEntityChecker;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Testcontainers.PostgreSql;
 using WireMock.RequestBuilders;
@@ -25,6 +28,11 @@ public static class TestHelpers
     public static PostgreSqlContainer GetPostgres() => new PostgreSqlBuilder()
         .WithImage("postgres:16-alpine")
         .Build();
+
+    public static IMemoryCache GetMemoryCache() => new ServiceCollection()
+        .AddMemoryCache()
+        .BuildServiceProvider()
+        .GetRequiredService<IMemoryCache>();
 
     public static IRequestBuilder GetIdRequest(string id) => Request.Create()
         .WithPath("/api/v1/Entities/id")
@@ -126,10 +134,10 @@ public static class TestHelpers
 
         var options = GetOptions(apiBase: client.BaseAddress?.AbsoluteUri, apiKey: "123");
 
-        return (server, new(options, client, repository));
+        return (server, new(options, client, repository, Mock.Of<ILogger<IReputationApi>>()));
     }
 
-    public static LegalEntityInfoReponse YandexInfo => new()
+    public static BasicInfo YandexBasicInfo => new()
     {
         Tin = 7704414297,
         Name = "ООО \"ЯНДЕКС.ТЕХНОЛОГИИ\"",
@@ -138,10 +146,10 @@ public static class TestHelpers
         EmployeesNumber = -1,
         IncorporationDate = new DateTimeOffset(new DateTime(2017, 05, 19)).ToUnixTimeSeconds(),
         LegalEntityStatus = LegalEntityStatus.Active,
-        SalaryDelays = false
+        Proceedings = new()
     };
 
-    public static LegalEntityInfoReponse SvyaznoyInfo => new()
+    public static BasicInfo SvyaznoyBasicInfo => new()
     {
         Tin = 7714617793,
         Name = "ООО \"СЕТЬ СВЯЗНОЙ\"",
@@ -150,8 +158,96 @@ public static class TestHelpers
         EmployeesNumber = -1,
         IncorporationDate = new DateTimeOffset(new DateTime(2005, 09, 20)).ToUnixTimeSeconds(),
         LegalEntityStatus = LegalEntityStatus.InTerminationProcess,
-        SalaryDelays = true
+        Proceedings = new()
+        {
+            Amount = 1843596.67,
+            Count = 21,
+            Description = "Оплата труда и иные выплаты по трудовым правоотношениям"
+        }
     };
+
+    public static ExtendedInfo YandexExtendedInfo
+    {
+        get
+        {
+            var info = new ExtendedInfo()
+            {
+                BasicInfo = YandexBasicInfo,
+                Manager = new Manager()
+                {
+                    Name = "МАСЮК ДМИТРИЙ ВИКТОРОВИЧ",
+                    Position = "ГЕНЕРАЛЬНЫЙ ДИРЕКТОР",
+                    Tin = 770373093393,
+                },
+            };
+
+            info.Shareholders.Add(new Shareholder()
+            {
+                Name = "ПУБЛИЧНАЯ КОМПАНИЯ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЯНДЕКС Н.В.\"",
+                Share = 60000000,
+                Size = 100,
+                Tin = -1,
+                Type = EntityType.ForeignCompany
+            });
+
+            return info;
+        }
+    }
+
+    public static ExtendedInfo SvyaznoyExtendedInfo
+    {
+        get
+        {
+            var info = new ExtendedInfo()
+            {
+                BasicInfo = SvyaznoyBasicInfo,
+                Manager = new Manager()
+                {
+                    Name = "АНГЕЛЕВСКИ ФИЛИПП МИТРЕВИЧ",
+                    Position = "КОНКУРСНЫЙ УПРАВЛЯЮЩИЙ",
+                    Tin = 231906423308
+                }
+            };
+            
+            info.Shareholders.Add(new Shareholder()
+            {
+                Name = "ДТСРЕТЕЙЛ ЛТД",
+                Share = 22258645,
+                Size = 69.25,
+                Tin = -1,
+                Type = EntityType.ForeignCompany
+            });
+            
+            info.Shareholders.Add(new Shareholder()
+            {
+                Name = "АО \"ГРУППА КОМПАНИЙ \"СВЯЗНОЙ\"",
+                Share = 1804755,
+                Size = 5.61,
+                Tin = 7703534714,
+                Type = EntityType.Company
+            });
+            
+            info.Shareholders.Add(new Shareholder()
+            {
+                Name = "СИННАМОН ШОР ЛТД.",
+                Share = 80800,
+                Size = 0.25,
+                Tin = -1,
+                Type = EntityType.ForeignCompany
+            });
+            
+            info.Shareholders.Add(new Shareholder()
+            {
+                Name = "ЕВРОСЕТЬ ХОЛДИНГ Н.В.",
+                Share = 7999200,
+                Size = 24.89,
+                Tin = -1,
+                Type = EntityType.ForeignCompany
+            });
+
+            return info;
+        }
+    }
 
     public static Mock<IRepository> GetRepositoryMock(ReputationApiResponse? message = null)
     {
@@ -161,10 +257,10 @@ public static class TestHelpers
         return repositoryMock;
     }
 
-    public static Mock<IReputationApi> GetReputationApiMock(LegalEntityInfoReponse? message = null)
+    public static Mock<IReputationApi> GetReputationApiMock(BasicInfo? message = null)
     {
         var apiMock = new Mock<IReputationApi>();
-        apiMock.Setup(x => x.Get(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None))
+        apiMock.Setup(x => x.GetBasicInfo(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None))
             .Returns(Task.FromResult(message));
         return apiMock;
     }

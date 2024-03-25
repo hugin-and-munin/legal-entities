@@ -14,14 +14,15 @@ public class LegalEntityCheckerTests
     {
         // Arrange
         var apiMock = TestHelpers.GetReputationApiMock();
-        var sut = new LegalEntityChecker(apiMock.Object);
+        var memoryCache = TestHelpers.GetMemoryCache();
+        var sut = new LegalEntityChecker(apiMock.Object, memoryCache);
 
         // Act
-        var actual = await sut.Get(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
+        var actual = await sut.GetBasicInfo(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
 
         // Assert
         actual.Should().Be(null);
-        apiMock.Verify(x => x.Get(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None), Times.Once);
+        apiMock.Verify(x => x.GetBasicInfo(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None), Times.Once);
     }
 
     /// <summary>
@@ -31,35 +32,37 @@ public class LegalEntityCheckerTests
     public async Task RequestOfNewCompanyCausesApiCall()
     {
         // Arrange
-        var expected = TestHelpers.SvyaznoyInfo;
+        var expected = TestHelpers.SvyaznoyBasicInfo;
         var apiMock = TestHelpers.GetReputationApiMock(expected);
-        var sut = new LegalEntityChecker(apiMock.Object);
+        var memoryCache = TestHelpers.GetMemoryCache();
+        var sut = new LegalEntityChecker(apiMock.Object, memoryCache);
 
         // Act
-        var actual = await sut.Get(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
+        var actual = await sut.GetBasicInfo(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
 
         // Assert
         actual.Should().Be(expected);
-        apiMock.Verify(x => x.Get(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None), Times.Once);
+        apiMock.Verify(x => x.GetBasicInfo(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None), Times.Once);
     }
 
     [TestMethod]
     public async Task MultipleRequestOfCachedCompanyCausesOnlyOneApiCall()
     {
         // Arrange
-        var expected = TestHelpers.SvyaznoyInfo;
+        var expected = TestHelpers.SvyaznoyBasicInfo;
         var apiMock = TestHelpers.GetReputationApiMock(expected);
-        var sut = new LegalEntityChecker(apiMock.Object);
+        var memoryCache = TestHelpers.GetMemoryCache();
+        var sut = new LegalEntityChecker(apiMock.Object, memoryCache);
 
         // Act
-        var actual1 = await sut.Get(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
-        var actual2 = await sut.Get(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
-        var actual3 = await sut.Get(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
+        var actual1 = await sut.GetBasicInfo(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
+        var actual2 = await sut.GetBasicInfo(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
+        var actual3 = await sut.GetBasicInfo(new LegalEntityInfoRequest(), Mock.Of<ServerCallContext>());
 
         // Assert
         actual1.Should().Be(actual2);
         actual2.Should().Be(actual3);
         actual3.Should().Be(expected);
-        apiMock.Verify(x => x.Get(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None), Times.Once);
+        apiMock.Verify(x => x.GetBasicInfo(It.IsAny<LegalEntityInfoRequest>(), CancellationToken.None), Times.Once);
     }
 }

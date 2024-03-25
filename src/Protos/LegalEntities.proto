@@ -4,19 +4,25 @@ package LegalEntityChecker;
 
 // 
 service LegalEntityChecker {
-  // 
-  rpc Get (LegalEntityInfoRequest) returns (LegalEntityInfoReponse);
+  // Короткий отчёт
+  rpc GetBasicInfo (LegalEntityInfoRequest) returns (BasicInfo);
+  // Расширенный отчёт
+  rpc GetExtendedInfo (LegalEntityInfoRequest) returns (ExtendedInfo);
 }
 
+// Запрос информации
+message LegalEntityInfoRequest {
+  int64 Tin = 1;
+}
 // Информация о юридическом лице
-message LegalEntityInfoReponse {
+message BasicInfo {
   // Короткое имя
   string name = 1;
   // ИНН
   int64 tin = 2;
   // Дата регистрации юридического лица
   int64 incorporationDate = 3;
-  // Уставной капитал (без десятых долей)
+  // Уставной капитал
   double authorizedCapital = 4;
   // Численность сотрудников
   int32 employeesNumber = 5;
@@ -24,8 +30,19 @@ message LegalEntityInfoReponse {
   string address = 6;
   // Статус
   LegalEntityStatus legalEntityStatus = 7;
-  // Есть сведения о невыплате зарплаты
-  bool salaryDelays = 8;
+  // Взыскания
+  Proceeding proceedings = 8;
+}
+
+message ExtendedInfo {
+  // Основная информация
+  BasicInfo basicInfo = 1;
+  // Руководитель
+  Manager manager = 2;
+  // Финансовая информация
+  repeated FinanceInfo financeInfo = 3;
+  // Учредители
+  repeated Shareholder shareholders = 4;
 }
 
 // Статус юридического лица
@@ -43,35 +60,6 @@ enum LegalEntityStatus
   Terminated = 4;
 }
 
-// Запрос информации
-message LegalEntityInfoRequest {
-  int64 Tin = 1;
-}
-
-// Запрос информации
-message LegalEntityExtendedInfoRequest {
-  int64 Tin = 1;
-}
-
-message LegalEntityExtendedInfoResponse {
-  // Короткое имя
-  string name = 1;
-  // ИНН
-  int64 tin = 2;
-  // Дата регистрации юридического лица
-  int64 incorporationDate = 3;
-  // Уставной капитал (без десятых долей)
-  int32 authorizedCapital = 4;
-  // Численность сотрудников
-  int32 employeesNumber = 5;
-  // Юридический адрес
-  string address = 6;
-  // Статус
-  LegalEntityStatus legalEntityStatus = 7;
-  // Финансовая информация
-  repeated FinanceInfo financeInfo = 8;
-}
-
 message FinanceInfo {
   int32 year = 1;
   int64 revenue = 2;
@@ -79,4 +67,35 @@ message FinanceInfo {
   int64 debit = 4;
   int64 credit = 5;
   int64 balance = 6;
+}
+
+// Руководитель
+message Manager {
+  int64 tin = 1;
+  string name = 2;
+  string position = 3;
+}
+
+// Учредители
+message Shareholder {
+  EntityType type = 1;
+  int64 tin = 2;
+  string name = 3;
+  double share = 4;
+  double size = 5;
+}
+
+// Взыскания ФССП
+message Proceeding {
+  double amount = 1;
+  int64 count = 2;
+  string description = 3;
+}
+
+enum EntityType {
+  Company = 0;
+  Person = 1;
+  ForeignCompany = 2;
+  Entrepreneur = 3;
+  MunicipalSubject = 4;
 }

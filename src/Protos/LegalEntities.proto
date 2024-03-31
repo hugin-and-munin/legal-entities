@@ -2,19 +2,24 @@ syntax = "proto3";
 
 package LegalEntityChecker;
 
-// 
+// Сервис для получения информации о юридическом лице
 service LegalEntityChecker {
-  // Короткий отчёт
-  rpc GetBasicInfo (LegalEntityInfoRequest) returns (BasicInfo);
-  // Расширенный отчёт
-  rpc GetExtendedInfo (LegalEntityInfoRequest) returns (ExtendedInfo);
+  // Получить информацию о компании
+  rpc GetLegalEntityInfo (LegalEntityInfoRequest) returns (LegalEntityInfo);
 }
 
 // Запрос информации
 message LegalEntityInfoRequest {
   int64 Tin = 1;
 }
-// Информация о юридическом лице
+
+message LegalEntityInfo {
+  BasicInfo basicInfo = 1;
+  ProceedingsInfo proceedingsInfo = 2;
+  FinanceInfo financeInfo = 3;
+}
+
+// Основная информация о юридическом лице
 message BasicInfo {
   // Короткое имя
   string name = 1;
@@ -30,19 +35,43 @@ message BasicInfo {
   string address = 6;
   // Статус
   LegalEntityStatus legalEntityStatus = 7;
-  // Взыскания
-  Proceeding proceedings = 8;
+  // Руководитель
+  Manager manager = 8;
+  // Учредители
+  repeated Shareholder shareholders = 9;
 }
 
-message ExtendedInfo {
-  // Основная информация
-  BasicInfo basicInfo = 1;
-  // Руководитель
-  Manager manager = 2;
-  // Финансовая информация
-  repeated FinanceInfo financeInfo = 3;
-  // Учредители
-  repeated Shareholder shareholders = 4;
+// Информация о взысканиях ФССП
+message ProceedingsInfo {
+  double amount = 1;
+  int64 count = 2;
+  string description = 3;
+}
+
+// Финансовая информация
+message FinanceInfo {
+  // Отчётный год
+  int32 year = 1;
+
+  // 2110 Выручка 
+  double income = 2;
+  // 2400 Чистая прибыль
+  double profit = 4;
+
+  // Баланс (актив)
+  // 1230 Дебиторская задолженность
+  double accountsReceivable = 3;
+ 
+  // Баланс (пассив)
+  // 1300 Капитал и резервы
+  double capitalAndReserves = 5;
+  // 1400 Долгосрочные обязательства
+  double longTermLiabilities = 6;
+  // 1500 Краткосрочные обязательства
+  double currentLiabilities = 7;
+
+  // 4122 Платежи в связи с оплатой труда работников
+  double paidSalary = 8;
 }
 
 // Статус юридического лица
@@ -60,15 +89,6 @@ enum LegalEntityStatus
   Terminated = 4;
 }
 
-message FinanceInfo {
-  int32 year = 1;
-  int64 revenue = 2;
-  int64 profit = 3;
-  int64 debit = 4;
-  int64 credit = 5;
-  int64 balance = 6;
-}
-
 // Руководитель
 message Manager {
   int64 tin = 1;
@@ -83,13 +103,6 @@ message Shareholder {
   string name = 3;
   double share = 4;
   double size = 5;
-}
-
-// Взыскания ФССП
-message Proceeding {
-  double amount = 1;
-  int64 count = 2;
-  string description = 3;
 }
 
 enum EntityType {

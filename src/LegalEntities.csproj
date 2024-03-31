@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="./Reputation/ReputationApi.json" SourceUrl="https://api.reputation.ru/swagger/v1/swagger.json" />
+    <OpenApiReference Include="./ReputationApi.json" SourceUrl="https://api.reputation.ru/swagger/v1/swagger.json" />
   </ItemGroup>
 
   <PropertyGroup>

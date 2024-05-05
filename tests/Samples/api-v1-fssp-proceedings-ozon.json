@@ -1,0 +1,50 @@
+{
+  "Aggregations": {
+    "Status": [
+      {
+        "Value": "Open",
+        "Sum": 0,
+        "Name": "Текущие",
+        "Count": 1
+      }
+    ],
+    "ExecutionObject": [
+      {
+        "Value": "Иные взыскания имущественного характера в пользу физических и юридических лиц",
+        "Sum": 0,
+        "Name": "Иные взыскания имущественного характера в пользу физических и юридических лиц",
+        "Count": 1
+      }
+    ],
+    "Year": [
+      {
+        "Value": 2024,
+        "Sum": 0,
+        "Name": "2024",
+        "Count": 1
+      }
+    ]
+  },
+  "TotalItems": 1,
+  "Items": [
+    {
+      "Id": "55e1b01e-0e02-33c6-cd99-205bf37825b8",
+      "Number": "82767/24/77053-ИП",
+      "InitiationDate": "2024-02-20T00:00:00",
+      "ConsolidatedProceedingNumber": null,
+      "DocumentType": "Исполнительный лист",
+      "DocumentDate": "2023-12-28T00:00:00",
+      "DocumentNumber": "ФС 045029414",
+      "DocumentRequirements": null,
+      "ExecutionObject": "Иные взыскания имущественного характера в пользу физических и юридических лиц",
+      "DebtTotal": 0,
+      "DebtRemain": 15348.04,
+      "DepartmentName": "ОСП по Центральному АО №1",
+      "DepartmentAddress": "129090, Россия, г. Москва, , , , пер. Коптельский 1-й, 14/16, 2, ",
+      "Status": "Open",
+      "CompletionDate": null,
+      "CompletionReason": null,
+      "CompletionReasonText": null
+    }
+  ]
+}

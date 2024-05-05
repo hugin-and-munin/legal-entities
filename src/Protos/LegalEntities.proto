@@ -2,21 +2,32 @@ syntax = "proto3";
 
 package LegalEntityChecker;
 
-// 
+// Сервис для получения информации о юридическом лице
 service LegalEntityChecker {
-  // 
-  rpc Get (LegalEntityInfoRequest) returns (LegalEntityInfoReponse);
+  // Получить информацию о компании
+  rpc GetLegalEntityInfo (LegalEntityInfoRequest) returns (LegalEntityInfo);
 }
 
-// Информация о юридическом лице
-message LegalEntityInfoReponse {
+// Запрос информации
+message LegalEntityInfoRequest {
+  int64 Tin = 1;
+}
+
+message LegalEntityInfo {
+  BasicInfo basicInfo = 1;
+  ProceedingsInfo proceedingsInfo = 2;
+  FinanceInfo financeInfo = 3;
+}
+
+// Основная информация о юридическом лице
+message BasicInfo {
   // Короткое имя
   string name = 1;
   // ИНН
   int64 tin = 2;
   // Дата регистрации юридического лица
   int64 incorporationDate = 3;
-  // Уставной капитал (без десятых долей)
+  // Уставной капитал
   double authorizedCapital = 4;
   // Численность сотрудников
   int32 employeesNumber = 5;
@@ -24,8 +35,43 @@ message LegalEntityInfoReponse {
   string address = 6;
   // Статус
   LegalEntityStatus legalEntityStatus = 7;
-  // Есть сведения о невыплате зарплаты
-  bool salaryDelays = 8;
+  // Руководитель
+  Manager manager = 8;
+  // Учредители
+  repeated Shareholder shareholders = 9;
+}
+
+// Информация о взысканиях ФССП
+message ProceedingsInfo {
+  double amount = 1;
+  int64 count = 2;
+  string description = 3;
+}
+
+// Финансовая информация
+message FinanceInfo {
+  // Отчётный год
+  int32 year = 1;
+
+  // 2110 Выручка 
+  double income = 2;
+  // 2400 Чистая прибыль
+  double profit = 4;
+
+  // Баланс (актив)
+  // 1230 Дебиторская задолженность
+  double accountsReceivable = 3;
+ 
+  // Баланс (пассив)
+  // 1300 Капитал и резервы
+  double capitalAndReserves = 5;
+  // 1400 Долгосрочные обязательства
+  double longTermLiabilities = 6;
+  // 1500 Краткосрочные обязательства
+  double currentLiabilities = 7;
+
+  // 4122 Платежи в связи с оплатой труда работников
+  double paidSalary = 8;
 }
 
 // Статус юридического лица
@@ -43,40 +89,26 @@ enum LegalEntityStatus
   Terminated = 4;
 }
 
-// Запрос информации
-message LegalEntityInfoRequest {
-  int64 Tin = 1;
+// Руководитель
+message Manager {
+  int64 tin = 1;
+  string name = 2;
+  string position = 3;
 }
 
-// Запрос информации
-message LegalEntityExtendedInfoRequest {
-  int64 Tin = 1;
-}
-
-message LegalEntityExtendedInfoResponse {
-  // Короткое имя
-  string name = 1;
-  // ИНН
+// Учредители
+message Shareholder {
+  EntityType type = 1;
   int64 tin = 2;
-  // Дата регистрации юридического лица
-  int64 incorporationDate = 3;
-  // Уставной капитал (без десятых долей)
-  int32 authorizedCapital = 4;
-  // Численность сотрудников
-  int32 employeesNumber = 5;
-  // Юридический адрес
-  string address = 6;
-  // Статус
-  LegalEntityStatus legalEntityStatus = 7;
-  // Финансовая информация
-  repeated FinanceInfo financeInfo = 8;
+  string name = 3;
+  double share = 4;
+  double size = 5;
 }
 
-message FinanceInfo {
-  int32 year = 1;
-  int64 revenue = 2;
-  int64 profit = 3;
-  int64 debit = 4;
-  int64 credit = 5;
-  int64 balance = 6;
+enum EntityType {
+  Company = 0;
+  Person = 1;
+  ForeignCompany = 2;
+  Entrepreneur = 3;
+  MunicipalSubject = 4;
 }

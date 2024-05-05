@@ -267,7 +267,7 @@ public class LegalEntityChecker(
         };
     }
 
-    private async Task<T?> GetAsync<T>(long tin, ReputationApiCall<T> apiCall, CancellationToken ct)
+    private async Task<T?> GetAsync<T>(long tin, ReputationApiCall<T> apiCall, CancellationToken ct) where T : notnull
     {
         T? result = default;
 
@@ -283,7 +283,7 @@ public class LegalEntityChecker(
 
         // Slow path -> call to API
         var entityIdKey = new EntityIdKey(tin);
-        if (!_memoryCache.TryGetValue<Guid>(entityIdKey, out var entityId) || entityId == Guid.Empty)
+        if (!_memoryCache.TryGetValue(entityIdKey, out Guid entityId) || entityId == Guid.Empty)
         {
             var entitiesResponse = await _reputationApiClient.EntitiesIdAsync(null, $"{tin}", null, ct);
             if (entitiesResponse.Items.Count == 0)
@@ -298,11 +298,15 @@ public class LegalEntityChecker(
 
         result = await apiCall(_reputationApiClient, entityId, ct);
 
+        if (result == null)
+        {
+            _logger.LogError("API returned null for tin = {tin}", tin);
+            return result;
+        }
+
         // Save to DB
         await _repository.UpsertAsync(tin, result, ct);
 
         return result;
     }
 }
-
-public class FinanceReportMap : Dictionary<int, string> { }

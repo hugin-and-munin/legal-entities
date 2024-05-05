@@ -3,7 +3,6 @@ using Grpc.Core;
 using LegalEntities.Database;
 using LegalEntityChecker;
 using static LegalEntityChecker.LegalEntityChecker;
-using System.Text.Json;
 
 namespace LegalEntities;
 
